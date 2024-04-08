@@ -1,0 +1,2 @@
+# Solitario-Manuelito
+School Project
