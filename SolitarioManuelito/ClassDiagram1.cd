@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SolitarioManuelito.Carta">
+    <Position X="3.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAACAAAAAEAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Carta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SolitarioManuelito.Mazzo">
+    <Position X="5.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAEAAAAAAAAAgAAAAAAAAAABAQAAAAAAAAAA=</HashCode>
+      <FileName>Mazzo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SolitarioManuelito.PartitaManuelito">
+    <Position X="7.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACACAAAAAABAAAACAAwAAAABAAAAwCAAA=</HashCode>
+      <FileName>PartitaManuelito.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SolitarioManuelito.PosizioniFinali">
+    <Position X="10" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAQAQAAACAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>PosizioniFinali.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SolitarioManuelito.PosizioniAusiliarie">
+    <Position X="12" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAQAQAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PosizioniAusiliarie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
