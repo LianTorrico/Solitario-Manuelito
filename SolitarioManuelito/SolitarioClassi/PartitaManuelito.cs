@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SolitarioManuelito
+namespace SolitarioClassi
 {
     public enum Posizioni
     {
