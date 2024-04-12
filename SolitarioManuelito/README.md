@@ -1,0 +1,18 @@
+# **Solitario Manuelito** 🎮
+##  **Come si gioca?** 🎲🤔
+Lo scopo di questo solitario è di **costruire e completare le basi poste al di sopra del tallone**, scorrendolo di tre carte in tre carte, di cui solo la prima è utilizzabile. Se questa viene spostata, la sottostante verrà liberata e diventerà anch’essa utilizzabile. 
+Al di sotto del tallone, invece, sono presenti quattro sequenze da utilizzare come ausilio per la riuscita del solitario. 
+Per le basi vale la regola dello stesso seme in senso ascendente, mentre nelle sequenze vale quella del seme diverso in senso discendente. 
+Le carte in cima alle sequenze, così come le carte del pozzo, possono essere posizionate sulle basi e/o sulle sequenze, mentre il numero di distribuzioni è pari a 3. 
+*Può essere spostata solo una carta alla volta.*
+## Come si installa? 🧰
+### 1. GitHub Clone 🤖
+***!Questo metodo richiede Git installato nel proprio computer!***
+
+Aprite la console e posizionatevi nella cartella in cui desiderate installare il programma ed eseguite il seguente comando: `git clone https://github.com/LianTorrico/Solitario-Manuelito`
+### 2. Installare lo zip 📦
+Nella pagina di questo repository, premere su "Code</>" e premere su Download Zip.
+## **Sviluppatori** 💻🎧📱
+1. [Lorenzo Morini](https://github.com/MoroQuack)
+2. [Francesco Foschi](https://github.com/supersayan1)
+3. [Lian Torrico](https://github.com/LianTorrico)
