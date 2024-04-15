@@ -8,6 +8,9 @@ Le carte in cima alle sequenze, così come le carte del pozzo, possono essere po
 ## **Mock-up** 🖇️🎨
 Questa è una illustrazione grafica di come il programma sarà e come interagisce a seconda dell'azione (In questo caso, vengono illustrati solo le variazioni di pagina e seconda dell'azione)
 ![image at <>](Mockup.png)
+
+## **Diagramma delle Classi** 📊📈
+![image at <>](DiagrammaClassi.png)
 ## Come si installa? 🧰🛠️
 ### 1. GitHub Clone 🤖🗃️
 ***!Questo metodo richiede Git installato nel proprio computer!***
@@ -33,6 +36,8 @@ Processore: Qualsiasi processore 1 GHz +
  Spazio: 6 MB di spazio disponibile</code>
 
 **Attenzione! I requisiti potrebbero variare con il passare del tempo.**
+
+
 
 ## **Sviluppatori** 💻🎧📱
 1. [Lorenzo Morini](https://github.com/MoroQuack)
