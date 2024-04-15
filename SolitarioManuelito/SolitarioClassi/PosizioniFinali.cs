@@ -69,7 +69,7 @@ namespace SolitarioClassi
         {
             if (mazzoScelto <= 0 || mazzoScelto > 4) throw new ArgumentOutOfRangeException("mazzo scelto deve essere tra 1 e 4");
             if (_pile[mazzoScelto - 1].Count() == 0) throw new Exception("mazzo scelto non contiene carte");
-            return _pile[mazzoScelto].Last();
+            return _pile[mazzoScelto-1].Last();
         }
 
     }

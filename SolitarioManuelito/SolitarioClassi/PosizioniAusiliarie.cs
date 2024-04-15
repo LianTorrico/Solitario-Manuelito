@@ -19,7 +19,7 @@ namespace SolitarioClassi
         public PosizioniAusiliarie(Carta carta1,Carta carta2, Carta carta3, Carta carta4)
         {
             if (carta1 == null || carta2 == null || carta3 == null || carta4 == null) throw new ArgumentNullException("Le carte non possono essere null");
-            _pile = new List<Carta>[0];
+            _pile = new List<Carta>[4];
             for (int i = 0; i < 4; i++) _pile[i] = new List<Carta>();
             _pile[0].Add(carta1);
             _pile[1].Add(carta2);
@@ -52,7 +52,7 @@ namespace SolitarioClassi
             if (mazzoScelto <= 0 || mazzoScelto > 4) throw new ArgumentOutOfRangeException("mazzo scelto deve essere tra 1 e 4");
             if (_pile[mazzoScelto - 1].Count() == 0) throw new Exception("mazzo scelto non contiene carte");
             Carta cartaPresa = _pile[mazzoScelto-1].Last();
-            _pile[i].Remove(cartaPresa);
+            _pile[mazzoScelto-1].Remove(cartaPresa);
             return cartaPresa;
         }
         /// <summary>
