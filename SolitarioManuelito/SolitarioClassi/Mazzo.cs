@@ -33,7 +33,7 @@ namespace SolitarioClassi
         /// <summary>
         /// Mescola il mazzo
         /// </summary>
-        private void Mescola()
+        public void Mescola()
         {
             if (Vuoto) throw new Exception("Carte finite");
             Random random = new Random();
@@ -62,6 +62,8 @@ namespace SolitarioClassi
         /// <param name="carte"></param>
         public void Ricostruisci(List<Carta> carte)
         {
+            if (carte.Count() == 0) throw new Exception("Non ci sono carte per rifare il mazzo");
+            if (carte == null) throw new ArgumentNullException("Lista di carte null");
             carte.Reverse();
             _carte = carte; 
         }

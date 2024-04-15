@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lorenzo.morini\\Desktop\\GitROba\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj": {}
+    "C:\\Users\\lorenzo.morini\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lorenzo.morini\\Desktop\\GitROba\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj": {
+    "C:\\Users\\lorenzo.morini\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lorenzo.morini\\Desktop\\GitROba\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj",
+        "projectUniqueName": "C:\\Users\\lorenzo.morini\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj",
         "projectName": "SolitarioClassi",
-        "projectPath": "C:\\Users\\lorenzo.morini\\Desktop\\GitROba\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj",
+        "projectPath": "C:\\Users\\lorenzo.morini\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj",
         "packagesPath": "C:\\Users\\lorenzo.morini\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lorenzo.morini\\Desktop\\GitROba\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\obj\\",
+        "outputPath": "C:\\Users\\lorenzo.morini\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

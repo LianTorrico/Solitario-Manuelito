@@ -15,32 +15,35 @@ namespace SolitarioClassi
         public PosizioniFinali()
         {
             _pile = new List<Carta>[4];
-            //forse da dichiarare le liste dentro
+            for(int i=0; i < 4; i++) _pile[i] = new List<Carta>();
         }
         /// <summary>
-        /// Aggiunge la carta data in cima al mazzo scelto
+        /// Aggiunge la carta data in cima al mazzo scelto (da 1 a 4)
         /// </summary>
         /// <param name="carta"></param>
         /// <param name="mazzoScelto"></param>
         public void AggiungiCarta(Carta carta,int mazzoScelto)
         {
-            if(carta == null) throw new ArgumentNullException("Carta è null");
-            if (mazzoScelto < 1 || mazzoScelto > 4) throw new ArgumentOutOfRangeException("mazzo scelto deve essere tra 1 e 4");
-            mazzoScelto--;
-            _pile[mazzoScelto].Add(carta);
-
+            if (carta == null) throw new ArgumentNullException("Carta è null");
+            if (mazzoScelto <= 0 || mazzoScelto > 4) throw new ArgumentOutOfRangeException("mazzo scelto deve essere tra 1 e 4");
+            Carta? cartaInCima = _pile[mazzoScelto - 1].LastOrDefault();
+            if ((cartaInCima == null && carta.Valore == Valore.Asso) || (cartaInCima!=null && cartaInCima.Seme == carta.Seme && (int)cartaInCima.Valore == (int)carta.Valore -1))
+            {
+                _pile[mazzoScelto - 1].Add(carta);
+            }
+            else throw new Exception("carta non aggiungibile");
         }
         /// <summary>
-        /// Rimuove la carta in cima al mazzo scelto e la restituisce
+        /// Rimuove la carta in cima al mazzo scelto (da 1 a 4) e la restituisce
         /// </summary>
         /// <param name="mazzoScelto"></param>
         /// <returns>Carta rimossa</returns>
         public Carta RimuoviCarta(int mazzoScelto)
         {
-            if (mazzoScelto < 1 || mazzoScelto > 4) throw new ArgumentOutOfRangeException("mazzo scelto deve essere tra 1 e 4");
-            mazzoScelto--;
-            Carta ultimaCarta = _pile[mazzoScelto].Last();
-            _pile[mazzoScelto].Remove(ultimaCarta);
+            if (mazzoScelto <= 0 || mazzoScelto > 4) throw new ArgumentOutOfRangeException("mazzo scelto deve essere tra 1 e 4");
+            if (_pile[mazzoScelto - 1].Count() == 0) throw new Exception("mazzo scelto non contiene carte");
+            Carta ultimaCarta = _pile[mazzoScelto-1].Last();
+            _pile[mazzoScelto-1].Remove(ultimaCarta);
             return ultimaCarta;
         }
         /// <summary>
@@ -64,6 +67,8 @@ namespace SolitarioClassi
         /// <returns>Carta rimossa</returns>
         public Carta GuardaCartaInCima(int mazzoScelto)
         {
+            if (mazzoScelto <= 0 || mazzoScelto > 4) throw new ArgumentOutOfRangeException("mazzo scelto deve essere tra 1 e 4");
+            if (_pile[mazzoScelto - 1].Count() == 0) throw new Exception("mazzo scelto non contiene carte");
             return _pile[mazzoScelto].Last();
         }
 
