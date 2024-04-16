@@ -12,23 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using SolitarioClassi;
 
 namespace ManuelitoWpf
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Logica di interazione per Partita.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Partita : Page
     {
-        public MainWindow()
+        public Partita()
         {
             InitializeComponent();
-        }
-
-        private void btn_Gioca_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

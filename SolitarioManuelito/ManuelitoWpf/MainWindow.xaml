@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ManuelitoWpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Background="Transparent"
+        ResizeMode="NoResize"
+        Title="MainWindow" Height="730" Width="350">
     <Grid>
-
+        <Grid.Background>
+            <ImageBrush ImageSource="UI/Menu.png" Stretch="UniformToFill"></ImageBrush>
+        </Grid.Background>
+        <Button x:Name="btn_Gioca" Content="" HorizontalAlignment="Center" Margin="0,374,0,0" VerticalAlignment="Top" Height="60" Width="204" Background="{x:Null}" BorderBrush="{x:Null}" Click="btn_Gioca_Click" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="30"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
     </Grid>
 </Window>

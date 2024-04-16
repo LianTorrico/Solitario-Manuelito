@@ -1,0 +1,80 @@
+﻿<Page x:Class="ManuelitoWpf.Partita"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ManuelitoWpf"
+      mc:Ignorable="d" 
+      Background="Transparent"
+      Title="Partita" Height="730" Width="350">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="UI/Partita.png" Stretch="UniformToFill"></ImageBrush>
+        </Grid.Background>
+        <Button x:Name="btn_finale1" Content="" HorizontalAlignment="Left" Margin="19,11,0,0" VerticalAlignment="Top" Height="119" Width="67">
+
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="11"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="btn_finale2" Content="" HorizontalAlignment="Left" Margin="101,11,0,0" VerticalAlignment="Top" Height="119" Width="67">
+
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="11"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="btn_finale3" Content="" HorizontalAlignment="Left" Margin="182,11,0,0" VerticalAlignment="Top" Height="119" Width="68">
+
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="11"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="btn_finale4" Content="" HorizontalAlignment="Left" Margin="263,11,0,0" VerticalAlignment="Top" Height="119" Width="68">
+
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="11"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="btn_ausiliare1" Content="" HorizontalAlignment="Left" Margin="19,600,0,0" VerticalAlignment="Top" Height="119" Width="67">
+
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="11"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="btn_ausiliare2" Content="" HorizontalAlignment="Left" Margin="101,600,0,0" VerticalAlignment="Top" Height="119" Width="67">
+
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="11"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="btn_ausiliare3" Content="" HorizontalAlignment="Left" Margin="182,600,0,0" VerticalAlignment="Top" Height="119" Width="68">
+
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="11"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="btn_ausiliare4" Content="" HorizontalAlignment="Left" Margin="263,600,0,0" VerticalAlignment="Top" Height="119" Width="68">
+
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="11"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+    </Grid>
+</Page>
