@@ -29,6 +29,13 @@ namespace SolitarioClassi
             _carteUscite = new List<Carta>();
         }
         /// <summary>
+        /// Proprietà con solo get delle carte uscite
+        /// </summary>
+        public List<Carta> CarteUscite
+        {
+            get { return _carteUscite; }
+        }
+        /// <summary>
         /// Pesca 3 carte dal mazzo se possibile, sennò quelle rimanenti
         /// </summary>
         public void PescaMano()
@@ -96,6 +103,23 @@ namespace SolitarioClassi
         public void Arrenditi()
         {
             //skill issue
+        }
+        /// <summary>
+        /// Restituice la carta in cima al mazzo scelto (da 1 a 4) delle posizioni scelte (o finali o ausiliarie)
+        /// </summary>
+        /// <param name="posizione"></param>
+        /// <param name="mazzo"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentException"></exception>
+        public Carta GuardaCartaInCimaAPosizioni(Posizioni posizione, int mazzo)
+        {
+            if (mazzo < 0 || mazzo > 4) throw new ArgumentOutOfRangeException("mazzo di partenza scelto deve essere tra 1 e 4");
+            if ((int)posizione < 1 || (int)posizione > 2) throw new ArgumentException("posizione non valida");
+            Carta cartaGuardata;
+            if (posizione == Posizioni.Finali) cartaGuardata = _posizioniFinali.GuardaCartaInCima(mazzo);
+            else cartaGuardata = _posizioniAusiliarie.GuardaCartaInCima(mazzo);
+            return cartaGuardata;
         }
 
 

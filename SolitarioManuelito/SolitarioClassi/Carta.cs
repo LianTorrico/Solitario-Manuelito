@@ -54,6 +54,14 @@ namespace SolitarioClassi
                 _seme = value;
             }
         }
+        public override bool Equals(object? obj)
+        {
+            if (obj == null) return false;
+            if(!(obj is Carta)) return false;
+            Carta c = (Carta)obj;
+            if (c.Seme == this.Seme && c.Valore == this.Valore) return true;
+            return false;
+        }
 
 
     }
