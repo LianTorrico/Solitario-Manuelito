@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\lorenzo.morini\Desktop\GitROba\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\
+C:\Users\francesco.foschi\Desktop\pietero\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\
 ManuelitoWpf
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\lorenzo.morini\Desktop\GitROba\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\App.xaml
-11407045341
+C:\Users\francesco.foschi\Desktop\pietero\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\App.xaml
+3-1550802883
 
-5218075057
-195-1311591521
-MainWindow.xaml;
+7-351256158
+195-196869026
+MainWindow.xaml;Menu.xaml;Partita.xaml;
 
 False
 

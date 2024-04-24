@@ -24,5 +24,65 @@ namespace ManuelitoWpf
         {
             InitializeComponent();
         }
+
+        private void btn_ausiliare1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_ausiliare2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_ausiliare3_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_ausiliare4_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_finale1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_finale2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_finale3_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_finale4_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void mazzo_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_cartaestratta_1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_cartaestratta_2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_cartaestratta_3_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -24,5 +24,10 @@ namespace ManuelitoWpf
         {
             InitializeComponent();
         }
+
+        private void btn_Gioca_Click(object sender, RoutedEventArgs e)
+        {
+            Partita partita = new Partita();
+        }
     }
 }

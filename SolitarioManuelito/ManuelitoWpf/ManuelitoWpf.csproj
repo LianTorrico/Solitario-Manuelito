@@ -11,4 +11,8 @@
     <ProjectReference Include="..\SolitarioClassi\SolitarioClassi.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="UI\Carte\" />
+  </ItemGroup>
+
 </Project>

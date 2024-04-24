@@ -27,23 +27,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lorenzo.morini\\.nuget\\packages\\": {},
+    "C:\\Users\\francesco.foschi\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lorenzo.morini\\Desktop\\GitROba\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\ManuelitoWpf.csproj",
+      "projectUniqueName": "C:\\Users\\francesco.foschi\\Desktop\\pietero\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\ManuelitoWpf.csproj",
       "projectName": "ManuelitoWpf",
-      "projectPath": "C:\\Users\\lorenzo.morini\\Desktop\\GitROba\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\ManuelitoWpf.csproj",
-      "packagesPath": "C:\\Users\\lorenzo.morini\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lorenzo.morini\\Desktop\\GitROba\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\obj\\",
+      "projectPath": "C:\\Users\\francesco.foschi\\Desktop\\pietero\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\ManuelitoWpf.csproj",
+      "packagesPath": "C:\\Users\\francesco.foschi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\francesco.foschi\\Desktop\\pietero\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\lorenzo.morini\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\francesco.foschi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -59,8 +59,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\lorenzo.morini\\Desktop\\GitROba\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj": {
-              "projectPath": "C:\\Users\\lorenzo.morini\\Desktop\\GitROba\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj"
+            "C:\\Users\\francesco.foschi\\Desktop\\pietero\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj": {
+              "projectPath": "C:\\Users\\francesco.foschi\\Desktop\\pietero\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj"
             }
           }
         }
