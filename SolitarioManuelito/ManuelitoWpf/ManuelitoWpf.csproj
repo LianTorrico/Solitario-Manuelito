@@ -8,11 +8,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="UI\**" />
+    <EmbeddedResource Remove="UI\**" />
+    <None Remove="UI\**" />
+    <Page Remove="UI\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="menu.png" />
+    <None Remove="Partita.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SolitarioClassi\SolitarioClassi.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="UI\Carte\" />
+    <Resource Include="menu.png" />
+    <Resource Include="Partita.png" />
   </ItemGroup>
 
 </Project>

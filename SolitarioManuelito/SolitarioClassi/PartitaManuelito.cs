@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 
@@ -29,6 +30,13 @@ namespace SolitarioClassi
             _carteUscite = new List<Carta>();
         }
         /// <summary>
+        /// Proprietà di get del mazzo
+        /// </summary>
+        public Mazzo Mazzo
+        {
+            get { return _mazzo; } 
+        }
+        /// <summary>
         /// Proprietà con solo get delle carte uscite
         /// </summary>
         public List<Carta> CarteUscite
@@ -46,7 +54,7 @@ namespace SolitarioClassi
             if(!_mazzo.Vuoto) _carteUscite.Add(_mazzo.PescaCarta());
         }
         /// <summary>
-        /// Muovi carta da posizioni ausiliarie o finali a posizioni ausiliarie o finali 
+        /// Muovi carta da posizioni ausiliarie o finali o centrali a posizioni ausiliarie o finali 
         /// </summary>
         /// <param name="posizionePartenza"></param>
         /// <param name="mazzoPartenza"></param>
@@ -65,20 +73,6 @@ namespace SolitarioClassi
             if (cartaDaSpostare == null) throw new Exception("carta inesistente");
             if (posizioneArrivo == Posizioni.Ausiliarie) _posizioniAusiliarie.AggiungiCarta(cartaDaSpostare, mazzoArrivo);
             else if(posizioneArrivo== Posizioni.Finali) _posizioniFinali.AggiungiCarta(cartaDaSpostare, mazzoArrivo);
-        }
-        /// <summary>
-        /// Muovi carta da mazzo centrale a posizioni finali o ausiliarie, per muovere carte che si trovano in altri mazzi usare l'overload
-        /// </summary>
-        /// <param name="posizioneArrivo"></param>
-        /// <param name="mazzoArrivo"></param>
-        public void MuoviCarta(Posizioni posizioneArrivo, int mazzoArrivo)
-        {
-            if ((int)posizioneArrivo < 1 || (int)posizioneArrivo > 2) throw new ArgumentException("posizione di arrivo non valida");
-            if (mazzoArrivo < 0 || mazzoArrivo > 4) throw new ArgumentOutOfRangeException("mazzo di partenza scelto deve essere tra 1 e 4");
-            Carta? cartaDaSpostare = _carteUscite.LastOrDefault();
-            if (cartaDaSpostare == null) throw new Exception("carta inesistente");
-            if (posizioneArrivo == Posizioni.Ausiliarie) _posizioniAusiliarie.AggiungiCarta(cartaDaSpostare, mazzoArrivo);
-            else if (posizioneArrivo == Posizioni.Finali) _posizioniFinali.AggiungiCarta(cartaDaSpostare, mazzoArrivo);
         }
         /// <summary>
         /// Ricostruisce il mazzo con le carte estratte che vengono svuotate
@@ -105,7 +99,7 @@ namespace SolitarioClassi
             //skill issue
         }
         /// <summary>
-        /// Restituice la carta in cima al mazzo scelto (da 1 a 4) delle posizioni scelte (o finali o ausiliarie)
+        /// Restituice la carta in cima al mazzo scelto (da 1 a 4) delle posizioni scelte (o finali o ausiliarie o centrali)
         /// </summary>
         /// <param name="posizione"></param>
         /// <param name="mazzo"></param>
@@ -116,9 +110,12 @@ namespace SolitarioClassi
         {
             if (mazzo < 0 || mazzo > 4) throw new ArgumentOutOfRangeException("mazzo di partenza scelto deve essere tra 1 e 4");
             if ((int)posizione < 1 || (int)posizione > 2) throw new ArgumentException("posizione non valida");
-            Carta cartaGuardata;
+            if (posizione == Posizioni.Centrale && mazzo != 1) throw new Exception("il mazzo centrale ha solo un mazzo");
+            Carta? cartaGuardata;
             if (posizione == Posizioni.Finali) cartaGuardata = _posizioniFinali.GuardaCartaInCima(mazzo);
-            else cartaGuardata = _posizioniAusiliarie.GuardaCartaInCima(mazzo);
+            else if (posizione == Posizioni.Ausiliarie) cartaGuardata = _posizioniAusiliarie.GuardaCartaInCima(mazzo);
+            else cartaGuardata = _carteUscite.LastOrDefault();
+            if (cartaGuardata == null) throw new ArgumentNullException("carta non presente");
             return cartaGuardata;
         }
 

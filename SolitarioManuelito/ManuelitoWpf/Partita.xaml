@@ -9,9 +9,9 @@
       Title="Partita" Height="730" Width="350">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="UI/Partita.png" Stretch="UniformToFill"></ImageBrush>
+            <ImageBrush ImageSource="/Partita.png" Stretch="UniformToFill"></ImageBrush>
         </Grid.Background>
-        <Button x:Name="btn_finale1" Content="" HorizontalAlignment="Left" Margin="19,11,0,0" VerticalAlignment="Top" Height="119" Width="67" Click="btn_finale1_Click">
+        <Button x:Name="btn_finale1" Content="" HorizontalAlignment="Left" Margin="19,11,0,0" VerticalAlignment="Top" Height="119" Width="67" Click="ClickCarta">
 
             <Button.Resources>
                 <Style TargetType="Border">
@@ -19,7 +19,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="btn_finale2" Content="" HorizontalAlignment="Left" Margin="101,11,0,0" VerticalAlignment="Top" Height="119" Width="67" Click="btn_finale2_Click">
+        <Button x:Name="btn_finale2" Content="" HorizontalAlignment="Left" Margin="101,11,0,0" VerticalAlignment="Top" Height="119" Width="67" Click="ClickCarta">
 
             <Button.Resources>
                 <Style TargetType="Border">
@@ -27,7 +27,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="btn_finale3" Content="" HorizontalAlignment="Left" Margin="182,11,0,0" VerticalAlignment="Top" Height="119" Width="68" Click="btn_finale3_Click">
+        <Button x:Name="btn_finale3" Content="" HorizontalAlignment="Left" Margin="182,11,0,0" VerticalAlignment="Top" Height="119" Width="68" Click="ClickCarta">
 
             <Button.Resources>
                 <Style TargetType="Border">
@@ -35,7 +35,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="btn_finale4" Content="" HorizontalAlignment="Left" Margin="263,11,0,0" VerticalAlignment="Top" Height="119" Width="68" Click="btn_finale4_Click">
+        <Button x:Name="btn_finale4" Content="" HorizontalAlignment="Left" Margin="263,11,0,0" VerticalAlignment="Top" Height="119" Width="68" Click="ClickCarta">
 
             <Button.Resources>
                 <Style TargetType="Border">
@@ -43,7 +43,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="btn_ausiliare1" Content="" HorizontalAlignment="Left" Margin="19,600,0,0" VerticalAlignment="Top" Height="119" Width="67" Click="btn_ausiliare1_Click">
+        <Button x:Name="btn_ausiliare1" Content="" HorizontalAlignment="Left" Margin="19,600,0,0" VerticalAlignment="Top" Height="119" Width="67" Click="ClickCarta">
 
             <Button.Resources>
                 <Style TargetType="Border">
@@ -51,7 +51,16 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="btn_ausiliare2" Content="" HorizontalAlignment="Left" Margin="101,600,0,0" VerticalAlignment="Top" Height="119" Width="67" Click="btn_ausiliare2_Click">
+        <Button x:Name="btn_ausiliare2" Content="" HorizontalAlignment="Left" Margin="101,600,0,0" VerticalAlignment="Top" Height="119" Width="67" Click="ClickCarta">
+
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="11"></Setter>
+                </Style>
+               
+            </Button.Resources>
+        </Button>
+        <Button x:Name="btn_ausiliare3" Content="" HorizontalAlignment="Left" Margin="182,600,0,0" VerticalAlignment="Top" Height="119" Width="68" Click="ClickCarta">
 
             <Button.Resources>
                 <Style TargetType="Border">
@@ -59,7 +68,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="btn_ausiliare3" Content="" HorizontalAlignment="Left" Margin="182,600,0,0" VerticalAlignment="Top" Height="119" Width="68" Click="btn_ausiliare3_Click">
+        <Button x:Name="btn_ausiliare4" Content="" HorizontalAlignment="Left" Margin="263,600,0,0" VerticalAlignment="Top" Height="119" Width="68" Click="ClickCarta">
 
             <Button.Resources>
                 <Style TargetType="Border">
@@ -67,18 +76,34 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="btn_ausiliare4" Content="" HorizontalAlignment="Left" Margin="263,600,0,0" VerticalAlignment="Top" Height="119" Width="68" Click="btn_ausiliare4_Click">
-
+        <Button x:Name="btn_cartaestratta_3" Content="" HorizontalAlignment="Left" Height="111" Margin="184,305,0,0" VerticalAlignment="Top" Width="66" Click="ClickCarta">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="11"></Setter>
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="btn_cartaestratta_3" Content="" HorizontalAlignment="Left" Height="111" Margin="184,305,0,0" VerticalAlignment="Top" Width="66" Click="btn_cartaestratta_3_Click"/>
-        <Button x:Name="btn_cartaestratta_2" Content="" HorizontalAlignment="Left" Height="111" Margin="204,323,0,0" VerticalAlignment="Top" Width="66" Click="btn_cartaestratta_2_Click"/>
-        <Button x:Name="btn_cartaestratta_1" Content="" HorizontalAlignment="Left" Height="121" Margin="217,338,0,0" VerticalAlignment="Top" Width="80" Click="btn_cartaestratta_1_Click"/>
-        <Button x:Name="btn_mazzo" Content="" HorizontalAlignment="Left" Height="130" Margin="52,268,0,0" VerticalAlignment="Top" Width="82" Click="mazzo_Click" />
+        <Button x:Name="btn_cartaestratta_2" Content="" HorizontalAlignment="Left" Height="111" Margin="204,323,0,0" VerticalAlignment="Top" Width="66" Click="ClickCarta">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="11"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="btn_cartaestratta_1" Content="" HorizontalAlignment="Left" Height="121" Margin="217,338,0,0" VerticalAlignment="Top" Width="80" Click="ClickCarta">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="11"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="btn_mazzo" Content="" HorizontalAlignment="Left" Height="130" Margin="52,268,0,0" VerticalAlignment="Top" Width="82" Click="mazzo_Click" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="11"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
 
     </Grid>
 </Page>
