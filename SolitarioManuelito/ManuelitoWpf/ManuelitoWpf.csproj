@@ -15,8 +15,191 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="images\Carte\10A.jpg" />
+    <None Remove="images\Carte\10B.jpg" />
+    <None Remove="images\Carte\10C.jpg" />
+    <None Remove="images\Carte\10D.jpg" />
+    <None Remove="images\Carte\1A.jpg" />
+    <None Remove="images\Carte\1B.jpg" />
+    <None Remove="images\Carte\1C.jpg" />
+    <None Remove="images\Carte\1D.jpg" />
+    <None Remove="images\Carte\2A.jpg" />
+    <None Remove="images\Carte\2B.jpg" />
+    <None Remove="images\Carte\2C.jpg" />
+    <None Remove="images\Carte\2D.jpg" />
+    <None Remove="images\Carte\3A.jpg" />
+    <None Remove="images\Carte\3B.jpg" />
+    <None Remove="images\Carte\3C.jpg" />
+    <None Remove="images\Carte\3D.jpg" />
+    <None Remove="images\Carte\4A.jpg" />
+    <None Remove="images\Carte\4B.jpg" />
+    <None Remove="images\Carte\4C.jpg" />
+    <None Remove="images\Carte\4D.jpg" />
+    <None Remove="images\Carte\5A.jpg" />
+    <None Remove="images\Carte\5B.jpg" />
+    <None Remove="images\Carte\5C.jpg" />
+    <None Remove="images\Carte\5D.jpg" />
+    <None Remove="images\Carte\6A.jpg" />
+    <None Remove="images\Carte\6B.jpg" />
+    <None Remove="images\Carte\6C.jpg" />
+    <None Remove="images\Carte\6D.jpg" />
+    <None Remove="images\Carte\7A.jpg" />
+    <None Remove="images\Carte\7B.jpg" />
+    <None Remove="images\Carte\7C.jpg" />
+    <None Remove="images\Carte\7D.jpg" />
+    <None Remove="images\Carte\8A.jpg" />
+    <None Remove="images\Carte\8B.jpg" />
+    <None Remove="images\Carte\8C.jpg" />
+    <None Remove="images\Carte\8D.jpg" />
+    <None Remove="images\Carte\9A.jpg" />
+    <None Remove="images\Carte\9B.jpg" />
+    <None Remove="images\Carte\9C.jpg" />
+    <None Remove="images\Carte\9D.jpg" />
+    <None Remove="images\Carte\RETRO.jpg" />
+    <None Remove="images\menu.png" />
+    <None Remove="images\Partita.png" />
+    <None Remove="images\Perdita.png" />
+    <None Remove="images\Vincita.png" />
     <None Remove="menu.png" />
     <None Remove="Partita.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="images\Carte\10A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\10B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\10C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\10D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\1A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\1B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\1C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\1D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\2A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\2B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\2C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\2D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\3A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\3B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\3C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\3D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\4A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\4B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\4C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\4D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\5A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\5B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\5C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\5D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\6A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\6B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\6C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\6D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\7A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\7B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\7C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\7D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\8A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\8B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\8C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\8D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\9A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\9B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\9C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\9D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Carte\RETRO.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\menu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Partita.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Perdita.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Vincita.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

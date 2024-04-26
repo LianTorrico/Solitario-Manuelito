@@ -56,15 +56,14 @@ namespace SolitarioClassi
             return cartaPresa;
         }
         /// <summary>
-        /// Guarda la carta in cima al mazzo scelto (da 1 a 4)
+        /// Guarda la carta in cima al mazzo scelto (da 1 a 4), return null se non presente
         /// </summary>
         /// <param name="mazzoScelto"></param>
         /// <returns>Carta rimossa</returns>
-        public Carta GuardaCartaInCima(int mazzoScelto)
+        public Carta? GuardaCartaInCima(int mazzoScelto)
         {
             if (mazzoScelto <= 0 || mazzoScelto > 4) throw new ArgumentOutOfRangeException("mazzo scelto deve essere tra 1 e 4");
-            if (_pile[mazzoScelto - 1].Count() == 0) throw new Exception("mazzo scelto non contiene carte");
-            return _pile[mazzoScelto - 1].Last();
+            return _pile[mazzoScelto - 1].LastOrDefault();
         }
         
     }

@@ -8,7 +8,7 @@ namespace TestSolitario
         public void AggiungiCarta_Asso()
         {
             PosizioniFinali posizioniFinaliTest = new PosizioniFinali();
-            Carta carta = new Carta(Valore.Asso,Semi.Denara);
+            Carta carta = new Carta(Valore.Asso,Semi.D);
             posizioniFinaliTest.AggiungiCarta(carta, 1);
             Carta expected = carta;
             Carta actual = posizioniFinaliTest.GuardaCartaInCima(1);
@@ -18,15 +18,15 @@ namespace TestSolitario
         public void AggiungiCarta_InaccettabilePrimaCarta()
         {
             PosizioniFinali posizioniFinaliTest = new PosizioniFinali();
-            Carta carta = new Carta(Valore.Due, Semi.Denara);
+            Carta carta = new Carta(Valore.Due, Semi.D);
             Assert.ThrowsException<Exception>(() => posizioniFinaliTest.AggiungiCarta(carta, 1));
         }
         [TestMethod]
         public void AggiungiCarta_InaccettabileSemeDiverso()
         {
             PosizioniFinali posizioniFinaliTest = new PosizioniFinali();
-            Carta carta = new Carta(Valore.Due, Semi.Bastoni);
-            Carta primaCarta = new Carta(Valore.Asso, Semi.Denara);
+            Carta carta = new Carta(Valore.Due, Semi.C);
+            Carta primaCarta = new Carta(Valore.Asso, Semi.D);
             posizioniFinaliTest.AggiungiCarta(primaCarta,1);
             Assert.ThrowsException<Exception>(() => posizioniFinaliTest.AggiungiCarta(carta, 1));
         }
@@ -34,8 +34,8 @@ namespace TestSolitario
         public void AggiungiCarta_InaccettabileValoreSbagliato()
         {
             PosizioniFinali posizioniFinaliTest = new PosizioniFinali();
-            Carta carta = new Carta(Valore.Tre, Semi.Denara);
-            Carta primaCarta = new Carta(Valore.Asso, Semi.Denara);
+            Carta carta = new Carta(Valore.Tre, Semi.D);
+            Carta primaCarta = new Carta(Valore.Asso, Semi.D);
             posizioniFinaliTest.AggiungiCarta(primaCarta, 1);
             Assert.ThrowsException<Exception>(() => posizioniFinaliTest.AggiungiCarta(carta, 1));
         }
@@ -43,21 +43,21 @@ namespace TestSolitario
         public void AggiungiCarta_InaccettabileMazzo0()
         {
             PosizioniFinali posizioniFinaliTest = new PosizioniFinali();
-            Carta carta = new Carta(Valore.Asso, Semi.Denara);
+            Carta carta = new Carta(Valore.Asso, Semi.D);
             Assert.ThrowsException<ArgumentOutOfRangeException>(() => posizioniFinaliTest.AggiungiCarta(carta, 0));
         }
         [TestMethod]
         public void AggiungiCarta_InaccettabileMazzo5()
         {
             PosizioniFinali posizioniFinaliTest = new PosizioniFinali();
-            Carta carta = new Carta(Valore.Asso, Semi.Denara);
+            Carta carta = new Carta(Valore.Asso, Semi.D);
             Assert.ThrowsException<ArgumentOutOfRangeException>(() => posizioniFinaliTest.AggiungiCarta(carta, 5));
         }
         [TestMethod]
         public void RimuoviCarta_CartaRimossa()
         {
             PosizioniFinali posizioniFinaliTest = new PosizioniFinali();
-            Carta carta = new Carta(Valore.Asso, Semi.Denara);
+            Carta carta = new Carta(Valore.Asso, Semi.D);
             posizioniFinaliTest.AggiungiCarta(carta, 1);
             Carta expected = carta;
             Carta actual = posizioniFinaliTest.RimuoviCarta(1);
@@ -68,7 +68,7 @@ namespace TestSolitario
         public void RimuoviCarta_CartaCorretta()
         {
             PosizioniFinali posizioniFinaliTest = new PosizioniFinali();
-            Carta carta = new Carta(Valore.Asso, Semi.Denara);
+            Carta carta = new Carta(Valore.Asso, Semi.D);
             posizioniFinaliTest.AggiungiCarta(carta, 1);
             Carta expected = carta;
             Carta actual = posizioniFinaliTest.GuardaCartaInCima(1);

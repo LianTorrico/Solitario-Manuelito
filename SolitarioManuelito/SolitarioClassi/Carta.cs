@@ -7,10 +7,10 @@ namespace SolitarioClassi
 {
     public enum Semi
     {
-        Spade=1,
-        Coppe,
-        Bastoni,
-        Denara
+        A=1,
+        B,
+        C,
+        D
     }
     public enum Valore
     {

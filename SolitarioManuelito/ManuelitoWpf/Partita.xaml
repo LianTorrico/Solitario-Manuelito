@@ -11,98 +11,110 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Partita.png" Stretch="UniformToFill"></ImageBrush>
         </Grid.Background>
-        <Button x:Name="btn_finale1" Content="" HorizontalAlignment="Left" Margin="19,11,0,0" VerticalAlignment="Top" Height="119" Width="67" Click="ClickCarta">
+        <Button x:Name="btn_finale1" HorizontalAlignment="Left" Margin="19,11,0,0" VerticalAlignment="Top" Height="119" Width="67" Click="ClickCarta">
 
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="11"></Setter>
                 </Style>
             </Button.Resources>
+            <Image x:Name="img_finale1" Height="100" Width="62"/>
         </Button>
-        <Button x:Name="btn_finale2" Content="" HorizontalAlignment="Left" Margin="101,11,0,0" VerticalAlignment="Top" Height="119" Width="67" Click="ClickCarta">
+        <Button x:Name="btn_finale2" HorizontalAlignment="Left" Margin="101,11,0,0" VerticalAlignment="Top" Height="119" Width="67" Click="ClickCarta">
 
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="11"></Setter>
                 </Style>
             </Button.Resources>
+            <Image x:Name="img_finale2" Height="100" Width="63"/>
         </Button>
-        <Button x:Name="btn_finale3" Content="" HorizontalAlignment="Left" Margin="182,11,0,0" VerticalAlignment="Top" Height="119" Width="68" Click="ClickCarta">
+        <Button x:Name="btn_finale3" HorizontalAlignment="Left" Margin="182,11,0,0" VerticalAlignment="Top" Height="119" Width="68" Click="ClickCarta">
 
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="11"></Setter>
                 </Style>
             </Button.Resources>
+            <Image x:Name="img_finale3" Height="100" Width="60"/>
         </Button>
-        <Button x:Name="btn_finale4" Content="" HorizontalAlignment="Left" Margin="263,11,0,0" VerticalAlignment="Top" Height="119" Width="68" Click="ClickCarta">
+        <Button x:Name="btn_finale4" HorizontalAlignment="Left" Margin="263,11,0,0" VerticalAlignment="Top" Height="119" Width="68" Click="ClickCarta">
 
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="11"></Setter>
                 </Style>
             </Button.Resources>
+            <Image x:Name="img_finale4" Height="100" Width="66"/>
         </Button>
-        <Button x:Name="btn_ausiliare1" Content="" HorizontalAlignment="Left" Margin="19,600,0,0" VerticalAlignment="Top" Height="119" Width="67" Click="ClickCarta">
+        <Button x:Name="btn_ausiliare1" HorizontalAlignment="Left" Margin="19,600,0,0" VerticalAlignment="Top" Height="119" Width="67" Click="ClickCarta">
 
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="11"></Setter>
                 </Style>
             </Button.Resources>
+            <Image x:Name="img_ausiliare1" Height="114" Width="62"/>
         </Button>
-        <Button x:Name="btn_ausiliare2" Content="" HorizontalAlignment="Left" Margin="101,600,0,0" VerticalAlignment="Top" Height="119" Width="67" Click="ClickCarta">
+        <Button x:Name="btn_ausiliare2" HorizontalAlignment="Left" Margin="101,600,0,0" VerticalAlignment="Top" Height="119" Width="67" Click="ClickCarta">
 
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="11"></Setter>
                 </Style>
-               
-            </Button.Resources>
-        </Button>
-        <Button x:Name="btn_ausiliare3" Content="" HorizontalAlignment="Left" Margin="182,600,0,0" VerticalAlignment="Top" Height="119" Width="68" Click="ClickCarta">
 
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="11"></Setter>
-                </Style>
             </Button.Resources>
+            <Image x:Name="img_ausiliare2" Height="100" Width="63"/>
         </Button>
-        <Button x:Name="btn_ausiliare4" Content="" HorizontalAlignment="Left" Margin="263,600,0,0" VerticalAlignment="Top" Height="119" Width="68" Click="ClickCarta">
+        <Button x:Name="btn_ausiliare3" HorizontalAlignment="Left" Margin="182,600,0,0" VerticalAlignment="Top" Height="119" Width="68" Click="ClickCarta">
 
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="11"></Setter>
                 </Style>
             </Button.Resources>
+            <Image x:Name="img_ausiliare3" Height="104" Width="67"/>
         </Button>
-        <Button x:Name="btn_cartaestratta_3" Content="" HorizontalAlignment="Left" Height="111" Margin="184,305,0,0" VerticalAlignment="Top" Width="66" Click="ClickCarta">
+        <Button x:Name="btn_ausiliare4" HorizontalAlignment="Left" Margin="263,600,0,0" VerticalAlignment="Top" Height="119" Width="68" Click="ClickCarta">
+
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="11"></Setter>
                 </Style>
             </Button.Resources>
+            <Image x:Name="img_ausiliare4" Height="100" Width="62"/>
         </Button>
-        <Button x:Name="btn_cartaestratta_2" Content="" HorizontalAlignment="Left" Height="111" Margin="204,323,0,0" VerticalAlignment="Top" Width="66" Click="ClickCarta">
+        <Button x:Name="btn_cartaestratta_3" HorizontalAlignment="Left" Height="111" Margin="184,305,0,0" VerticalAlignment="Top" Width="66" Click="ClickCarta">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="11"></Setter>
                 </Style>
             </Button.Resources>
+            <Image x:Name="img_cartaEstratta3" Height="100" Width="62"/>
         </Button>
-        <Button x:Name="btn_cartaestratta_1" Content="" HorizontalAlignment="Left" Height="121" Margin="217,338,0,0" VerticalAlignment="Top" Width="80" Click="ClickCarta">
+        <Button x:Name="btn_cartaestratta_2" HorizontalAlignment="Left" Height="111" Margin="204,323,0,0" VerticalAlignment="Top" Width="66" Click="ClickCarta">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="11"></Setter>
                 </Style>
             </Button.Resources>
+            <Image x:Name="img_cartaEstratta2" Height="100" Width="66"/>
         </Button>
-        <Button x:Name="btn_mazzo" Content="" HorizontalAlignment="Left" Height="130" Margin="52,268,0,0" VerticalAlignment="Top" Width="82" Click="mazzo_Click" >
+        <Button x:Name="btn_cartaestratta_1" HorizontalAlignment="Left" Height="121" Margin="217,338,0,0" VerticalAlignment="Top" Width="80" Click="ClickCarta">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="11"></Setter>
                 </Style>
             </Button.Resources>
+            <Image x:Name="img_cartaEstratta1" Height="100" Width="72"/>
+        </Button>
+        <Button x:Name="btn_mazzo" HorizontalAlignment="Left" Height="130" Margin="52,268,0,0" VerticalAlignment="Top" Width="82" Click="mazzo_Click" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="11"></Setter>
+                </Style>
+            </Button.Resources>
+            <Image x:Name="img_mazzo" Height="100" Width="72"/>
         </Button>
 
     </Grid>
