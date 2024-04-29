@@ -7,14 +7,10 @@ C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\Manuelito
 C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\bin\Debug\net6.0-windows\SolitarioClassi.pdb
 C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\ManuelitoWpf.csproj.AssemblyReference.cache
 C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\MainWindow.g.cs
-C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\Menu.g.cs
-C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\Partita.g.cs
 C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\ManuelitoWpf_MarkupCompile.cache
 C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\ManuelitoWpf_MarkupCompile.lref
 C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\MainWindow.baml
-C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\Menu.baml
-C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\Partita.baml
 C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\ManuelitoWpf.g.resources
 C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\ManuelitoWpf.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\ManuelitoWpf.AssemblyInfoInputs.cache
@@ -72,3 +68,9 @@ C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\Manuelito
 C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\bin\Debug\net6.0-windows\images\Perdita.png
 C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\bin\Debug\net6.0-windows\images\Vincita.png
 C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\ManuelitoWpf_Content.g.cs
+C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\MenuM.g.cs
+C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\PartitaM.g.cs
+C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\MenuM.baml
+C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\PartitaM.baml
+C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\FineM.g.cs
+C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\FineM.baml

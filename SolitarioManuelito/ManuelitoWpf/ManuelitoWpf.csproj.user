@@ -7,7 +7,27 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="FineM.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MenuM.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PartitaM.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="FineM.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MenuM.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PartitaM.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

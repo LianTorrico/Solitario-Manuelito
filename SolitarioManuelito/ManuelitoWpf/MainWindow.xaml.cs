@@ -24,9 +24,10 @@ namespace ManuelitoWpf
         public MainWindow()
         {
             InitializeComponent();
-            Partita menu = new Partita();
-            this.Content = menu;
-        }
-        
+            MenuM m = new MenuM();
+            m.Show();
+            this.Close();
+            this.ResizeMode = ResizeMode.NoResize;
+        }        
     }
 }
