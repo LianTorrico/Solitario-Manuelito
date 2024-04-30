@@ -18,5 +18,12 @@
                 </Style>
             </Button.Resources>
         </Button>
+        <Button x:Name="btn_regole" Content="Come si gioca" Margin="61,469,63,185" BorderBrush="{x:Null}" Click="btn_regole_Click" Background="#FF27A216" Foreground="White" FontSize="28" >
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
     </Grid>
 </Window>

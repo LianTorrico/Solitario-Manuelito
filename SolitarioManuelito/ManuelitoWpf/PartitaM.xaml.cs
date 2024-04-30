@@ -41,6 +41,7 @@ namespace ManuelitoWpf
             this.ResizeMode = ResizeMode.NoResize;
             Height = 760;
             Width = 380;
+            WindowStartupLocation = WindowStartupLocation.CenterOwner;
         }
         private void BottoniInvisibili()
         {
@@ -395,7 +396,9 @@ namespace ManuelitoWpf
                     MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
                 PartitaM p = new PartitaM();
+                p.Owner = this;
                 p.Show();
+                p.Owner = null;
             }
             this.Close();
         }   
@@ -404,12 +407,14 @@ namespace ManuelitoWpf
         private void Vittoria()
         {
             if (MessageBox.Show("Vuoi giocare ancora?",
-                    "Sconfitta",
+                    "Vittoria",
                     MessageBoxButton.YesNo,
                     MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
                 PartitaM p = new PartitaM();
+                p.Owner = this;
                 p.Show();
+                p.Owner = null;
             }
             this.Close();
         }
