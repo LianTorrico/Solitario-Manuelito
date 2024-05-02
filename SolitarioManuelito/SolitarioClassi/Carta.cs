@@ -29,13 +29,22 @@ namespace SolitarioClassi
     {
         private Valore _valore;
         private Semi _seme;
+        private string _percorso;
 
         public Carta(Valore valore, Semi seme)
         {
             Valore = valore;
             Seme = seme;
+            InizializzaPercorso();
         }
-
+        private void InizializzaPercorso()
+        {
+            _percorso = "images/carte/" + (int)Valore + Seme.ToString() + ".jpg";
+        }
+        public string Percorso
+        {
+            get { return _percorso; }
+        }
         public Valore Valore
         {
             get { return _valore; }

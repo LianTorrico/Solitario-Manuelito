@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SolitarioClassi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08f4cd4416122ed8909f2c0bb540cbb11d49708c")]
 [assembly: System.Reflection.AssemblyProductAttribute("SolitarioClassi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SolitarioClassi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

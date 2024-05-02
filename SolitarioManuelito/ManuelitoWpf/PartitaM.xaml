@@ -109,6 +109,7 @@
                 </Style>
             </Button.Resources>
         </Button>
+        <Image x:Name="img_animazione" Height="100" Width="62" Margin="111,370,177,244"/>
 
     </Grid>
 </Window>

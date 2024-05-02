@@ -1,0 +1,236 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioManuelito\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA983AA-F732-4B51-92F6-3FE1ABBD2750}|..\\ManuelitoWpf\\ManuelitoWpf.csproj|c:\\users\\loren\\onedrive\\desktop\\school\\solitario-manuelito\\solitariomanuelito\\manuelitowpf\\partitam.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA983AA-F732-4B51-92F6-3FE1ABBD2750}|..\\ManuelitoWpf\\ManuelitoWpf.csproj|c:\\users\\loren\\onedrive\\desktop\\school\\solitario-manuelito\\solitariomanuelito\\manuelitowpf\\menum.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\loren\\AppData\\Local\\Temp\\.vsdbgsrc\\47d2d5cad4418146ba4a6441d7ebbd0bdcb328514049c4f1845bbbaf0c35ecfd\\AnimationStorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA983AA-F732-4B51-92F6-3FE1ABBD2750}|..\\ManuelitoWpf\\ManuelitoWpf.csproj|c:\\users\\loren\\onedrive\\desktop\\school\\solitario-manuelito\\solitariomanuelito\\manuelitowpf\\partitam.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA983AA-F732-4B51-92F6-3FE1ABBD2750}|..\\ManuelitoWpf\\ManuelitoWpf.csproj|c:\\users\\loren\\onedrive\\desktop\\school\\solitario-manuelito\\solitariomanuelito\\manuelitowpf\\menum.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FF04D30-6AFB-4F24-A4E7-38F2C57C72EA}|..\\SolitarioClassi\\SolitarioClassi.csproj|c:\\users\\loren\\onedrive\\desktop\\school\\solitario-manuelito\\solitariomanuelito\\solitarioclassi\\posizioniausiliarie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA983AA-F732-4B51-92F6-3FE1ABBD2750}|..\\ManuelitoWpf\\ManuelitoWpf.csproj|c:\\users\\loren\\onedrive\\desktop\\school\\solitario-manuelito\\solitariomanuelito\\manuelitowpf\\finem.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FF04D30-6AFB-4F24-A4E7-38F2C57C72EA}|..\\SolitarioClassi\\SolitarioClassi.csproj|c:\\users\\loren\\onedrive\\desktop\\school\\solitario-manuelito\\solitariomanuelito\\solitarioclassi\\carta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA983AA-F732-4B51-92F6-3FE1ABBD2750}|..\\ManuelitoWpf\\ManuelitoWpf.csproj|c:\\users\\loren\\onedrive\\desktop\\school\\solitario-manuelito\\solitariomanuelito\\manuelitowpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA983AA-F732-4B51-92F6-3FE1ABBD2750}|..\\ManuelitoWpf\\ManuelitoWpf.csproj|c:\\users\\loren\\onedrive\\desktop\\school\\solitario-manuelito\\solitariomanuelito\\manuelitowpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FF04D30-6AFB-4F24-A4E7-38F2C57C72EA}|..\\SolitarioClassi\\SolitarioClassi.csproj|c:\\users\\loren\\onedrive\\desktop\\school\\solitario-manuelito\\solitariomanuelito\\solitarioclassi\\posizionifinali.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA983AA-F732-4B51-92F6-3FE1ABBD2750}|..\\ManuelitoWpf\\ManuelitoWpf.csproj|c:\\users\\loren\\onedrive\\desktop\\school\\solitario-manuelito\\solitariomanuelito\\manuelitowpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FF04D30-6AFB-4F24-A4E7-38F2C57C72EA}|..\\SolitarioClassi\\SolitarioClassi.csproj|c:\\users\\loren\\onedrive\\desktop\\school\\solitario-manuelito\\solitariomanuelito\\solitarioclassi\\partitamanuelito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FF04D30-6AFB-4F24-A4E7-38F2C57C72EA}|..\\SolitarioClassi\\SolitarioClassi.csproj|c:\\users\\loren\\onedrive\\desktop\\school\\solitario-manuelito\\solitariomanuelito\\solitarioclassi\\mazzo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AnimationStorage.cs",
+              "DocumentMoniker": "C:\\Users\\loren\\AppData\\Local\\Temp\\.vsdbgsrc\\47d2d5cad4418146ba4a6441d7ebbd0bdcb328514049c4f1845bbbaf0c35ecfd\\AnimationStorage.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\47d2d5cad4418146ba4a6441d7ebbd0bdcb328514049c4f1845bbbaf0c35ecfd\\AnimationStorage.cs",
+              "ToolTip": "C:\\Users\\loren\\AppData\\Local\\Temp\\.vsdbgsrc\\47d2d5cad4418146ba4a6441d7ebbd0bdcb328514049c4f1845bbbaf0c35ecfd\\AnimationStorage.cs [Sola lettura]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\47d2d5cad4418146ba4a6441d7ebbd0bdcb328514049c4f1845bbbaf0c35ecfd\\AnimationStorage.cs [Sola lettura]",
+              "ViewState": "AQIAAPUAAAAAAAAAAAArwAIBAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T12:10:28.274Z",
+              "EditorCaption": " [Sola lettura]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MenuM.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\MenuM.xaml.cs",
+              "RelativeDocumentMoniker": "..\\ManuelitoWpf\\MenuM.xaml.cs",
+              "ToolTip": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\MenuM.xaml.cs",
+              "RelativeToolTip": "..\\ManuelitoWpf\\MenuM.xaml.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAADwvxsAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T10:07:15.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MenuM.xaml",
+              "DocumentMoniker": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\MenuM.xaml",
+              "RelativeDocumentMoniker": "..\\ManuelitoWpf\\MenuM.xaml",
+              "ToolTip": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\MenuM.xaml",
+              "RelativeToolTip": "..\\ManuelitoWpf\\MenuM.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-02T10:07:15.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PartitaM.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\PartitaM.xaml.cs",
+              "RelativeDocumentMoniker": "..\\ManuelitoWpf\\PartitaM.xaml.cs",
+              "ToolTip": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\PartitaM.xaml.cs",
+              "RelativeToolTip": "..\\ManuelitoWpf\\PartitaM.xaml.cs",
+              "ViewState": "AQIAAPIAAAAAAAAAAAAjwP4AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T10:07:15.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PartitaM.xaml",
+              "DocumentMoniker": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\PartitaM.xaml",
+              "RelativeDocumentMoniker": "..\\ManuelitoWpf\\PartitaM.xaml",
+              "ToolTip": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\PartitaM.xaml",
+              "RelativeToolTip": "..\\ManuelitoWpf\\PartitaM.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-02T10:07:15.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\App.xaml",
+              "RelativeDocumentMoniker": "..\\ManuelitoWpf\\App.xaml",
+              "ToolTip": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\App.xaml",
+              "RelativeToolTip": "..\\ManuelitoWpf\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-02T10:07:15.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PosizioniAusiliarie.cs",
+              "DocumentMoniker": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\PosizioniAusiliarie.cs",
+              "RelativeDocumentMoniker": "..\\SolitarioClassi\\PosizioniAusiliarie.cs",
+              "ToolTip": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\PosizioniAusiliarie.cs",
+              "RelativeToolTip": "..\\SolitarioClassi\\PosizioniAusiliarie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T10:07:15.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PosizioniFinali.cs",
+              "DocumentMoniker": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\PosizioniFinali.cs",
+              "RelativeDocumentMoniker": "..\\SolitarioClassi\\PosizioniFinali.cs",
+              "ToolTip": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\PosizioniFinali.cs",
+              "RelativeToolTip": "..\\SolitarioClassi\\PosizioniFinali.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAASwEYAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T10:07:15.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Carta.cs",
+              "DocumentMoniker": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\Carta.cs",
+              "RelativeDocumentMoniker": "..\\SolitarioClassi\\Carta.cs",
+              "ToolTip": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\Carta.cs",
+              "RelativeToolTip": "..\\SolitarioClassi\\Carta.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAWwCkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T10:07:15.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FineM.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\FineM.xaml.cs",
+              "RelativeDocumentMoniker": "..\\ManuelitoWpf\\FineM.xaml.cs",
+              "ToolTip": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\FineM.xaml.cs",
+              "RelativeToolTip": "..\\ManuelitoWpf\\FineM.xaml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T10:07:14.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\ManuelitoWpf\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\MainWindow.xaml.cs",
+              "RelativeToolTip": "..\\ManuelitoWpf\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAUwBUAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T10:07:15.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "..\\ManuelitoWpf\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\MainWindow.xaml",
+              "RelativeToolTip": "..\\ManuelitoWpf\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-02T10:07:15.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PartitaManuelito.cs",
+              "DocumentMoniker": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\PartitaManuelito.cs",
+              "RelativeDocumentMoniker": "..\\SolitarioClassi\\PartitaManuelito.cs",
+              "ToolTip": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\PartitaManuelito.cs",
+              "RelativeToolTip": "..\\SolitarioClassi\\PartitaManuelito.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAYwFAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T10:07:15.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Mazzo.cs",
+              "DocumentMoniker": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\Mazzo.cs",
+              "RelativeDocumentMoniker": "..\\SolitarioClassi\\Mazzo.cs",
+              "ToolTip": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\Mazzo.cs",
+              "RelativeToolTip": "..\\SolitarioClassi\\Mazzo.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAwwEMAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T10:07:15.061Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

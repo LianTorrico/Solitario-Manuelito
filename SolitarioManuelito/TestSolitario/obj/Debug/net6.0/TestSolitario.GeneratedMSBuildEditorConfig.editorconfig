@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TestSolitario
-build_property.ProjectDir = C:\Users\lorenzo.morini\Desktop\Solitario-Manuelito\SolitarioManuelito\TestSolitario\
+build_property.ProjectDir = C:\Users\loren\OneDrive\Desktop\School\Solitario-Manuelito\SolitarioManuelito\TestSolitario\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -24,11 +25,15 @@ namespace ManuelitoWpf
     {
         PartitaManuelito partitaManuelito;
         bool modalitaSelezioneCarta;
+
         Carta cartaDaSpostare;
         Posizioni posizioneDaSpostare;
         int mazzoDaSpostare;
-        Posizioni posizioneArrivo;
         Button btnCartaSelezionata;
+
+        Posizioni posizioneArrivo;
+        Button btnArrivo;
+        System.Windows.Controls.Image? immagineArrivo;
         int mazzoArrivo;
 
         public PartitaM()
@@ -42,6 +47,7 @@ namespace ManuelitoWpf
             Height = 760;
             Width = 380;
             WindowStartupLocation = WindowStartupLocation.CenterOwner;
+            img_animazione.Source = new BitmapImage(new Uri("/images/carte/10A.jpg", UriKind.Relative));
         }
         private void BottoniInvisibili()
         {
@@ -56,7 +62,203 @@ namespace ManuelitoWpf
             btn_cartaestratta_1.Background = Brushes.Transparent;
             btn_mazzo.Background = Brushes.Transparent;
         }
-        private void SelezionaCartaDaBottone(object sender)
+        private void SelezionaPosizioniArrivo(object sender)
+        {
+            btnArrivo = (Button)sender;
+            if (sender == btn_ausiliare1)
+            {
+                posizioneArrivo = Posizioni.Ausiliarie;
+                mazzoArrivo = 1;
+            }
+            else if (sender == btn_ausiliare2)
+            {
+                posizioneArrivo = Posizioni.Ausiliarie;
+                mazzoArrivo = 2;
+            }
+            else if (sender == btn_ausiliare3)
+            {
+                posizioneArrivo = Posizioni.Ausiliarie;
+                mazzoArrivo = 3;
+            }
+            else if (sender == btn_ausiliare4)
+            {
+                posizioneArrivo = Posizioni.Ausiliarie;
+                mazzoArrivo = 4;
+            }
+            else if (sender == btn_finale1)
+            {
+                posizioneArrivo = Posizioni.Finali;
+                mazzoArrivo = 1;
+            }
+            else if (sender == btn_finale2)
+            {
+                posizioneArrivo = Posizioni.Finali;
+                mazzoArrivo = 2;
+            }
+            else if (sender == btn_finale3)
+            {
+                posizioneArrivo = Posizioni.Finali;
+                mazzoArrivo = 3;
+            }
+            else if (sender == btn_finale4)
+            {
+                posizioneArrivo = Posizioni.Finali;
+                mazzoArrivo = 4;
+            }
+            else if (sender == btn_cartaestratta_1)
+            {
+                posizioneArrivo = Posizioni.Centrale;
+                mazzoArrivo = 1;
+            }
+        }
+        private void ClickCarta(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (modalitaSelezioneCarta)
+                {
+                    SelezionaPosizioneBottone(sender);
+                    btnCartaSelezionata = (Button)sender;
+                    modalitaSelezioneCarta = false;
+                    btnCartaSelezionata.Background = Brushes.Cyan;
+                }
+                else
+                {
+                    if ((Button)sender == btnCartaSelezionata)
+                    {
+                        modalitaSelezioneCarta = true;
+                        btnCartaSelezionata.Background = Brushes.Transparent;
+                    }
+                    else
+                    {
+                        SelezionaPosizioniArrivo(sender);
+                        immagineArrivo = (System.Windows.Controls.Image)btnArrivo.Content;
+                        partitaManuelito.MuoviCarta(posizioneDaSpostare, mazzoDaSpostare, posizioneArrivo, mazzoArrivo);
+                        Animazione();
+                        modalitaSelezioneCarta = true;
+                        string? percorsoImmagineSotto = null;
+                        if (immagineArrivo!=null) percorsoImmagineSotto = Convert.ToString(immagineArrivo.Source);
+                        AggiornaImmagini();
+                        if(percorsoImmagineSotto!=null)immagineArrivo.Source = new BitmapImage(new Uri(percorsoImmagineSotto, UriKind.RelativeOrAbsolute));
+                        btnCartaSelezionata.Background = Brushes.Transparent;                   
+                    }
+                }
+                if (partitaManuelito.VerificaVittoria) Vittoria();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }        
+        }
+        private void mazzo_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (partitaManuelito.Mazzo.Vuoto)
+                {
+                    partitaManuelito.RicostruisciMazzo();
+                }
+                else
+                {
+                    partitaManuelito.PescaMano();
+                }
+                AggiornaImmagini();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void btn_Resa_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Vuoi giocare ancora?",
+                    "Sconfitta",
+                    MessageBoxButton.YesNo,
+                    MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                PartitaM p = new PartitaM();
+                p.Owner = this;
+                p.Show();
+                p.Owner = null;
+            }
+            this.Close();
+        }         
+        private void Vittoria()
+        {
+            if (MessageBox.Show("Vuoi giocare ancora?",
+                    "Vittoria",
+                    MessageBoxButton.YesNo,
+                    MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                PartitaM p = new PartitaM();
+                p.Owner = this;
+                p.Show();
+                p.Owner = null;
+            }
+            this.Close();
+        }
+        private void Animazione()
+        {
+            System.Windows.Controls.Image? im = new System.Windows.Controls.Image();
+            NameScope.SetNameScope(this, new NameScope());
+            img_animazione.Margin = btnCartaSelezionata.Margin;
+            img_animazione.Source = new BitmapImage(new Uri(cartaDaSpostare.Percorso, UriKind.Relative));
+            img_animazione.Visibility = Visibility.Visible;
+
+            // Create a MatrixTransform. This transform
+            // will be used to move the button.
+            MatrixTransform buttonMatrixTransform = new MatrixTransform();
+            img_animazione.RenderTransform = buttonMatrixTransform;
+            // Register the transform's name with the page
+            // so that it can be targeted by a Storyboard.
+            this.RegisterName("img_animazione", buttonMatrixTransform);
+
+            double x = btnArrivo.Margin.Left - btnCartaSelezionata.Margin.Left;
+            double y = btnArrivo.Margin.Top - btnCartaSelezionata.Margin.Top;
+            // Create the animation path.
+            PathGeometry animationPath = new PathGeometry();
+            PathFigure pFigure = new PathFigure();
+            pFigure.StartPoint = new Point(0,0);
+            PolyBezierSegment pBezierSegment = new PolyBezierSegment();
+            pBezierSegment.Points.Add(pFigure.StartPoint);
+            pBezierSegment.Points.Add(new Point(x,y));
+            pBezierSegment.Points.Add(new Point(x, y));
+            pFigure.Segments.Add(pBezierSegment);
+            animationPath.Figures.Add(pFigure);
+
+            // Freeze the PathGeometry for performance benefits.
+            animationPath.Freeze();
+
+            // Create a MatrixAnimationUsingPath to move the
+            // button along the path by animating
+            // its MatrixTransform.
+            MatrixAnimationUsingPath matrixAnimation =
+                new MatrixAnimationUsingPath();
+            matrixAnimation.PathGeometry = animationPath;
+            matrixAnimation.Duration = TimeSpan.FromSeconds(0.5);
+
+            // Set the animation to target the Matrix property
+            // of the MatrixTransform named "ButtonMatrixTransform".
+            Storyboard.SetTargetName(matrixAnimation, "img_animazione");
+            Storyboard.SetTargetProperty(matrixAnimation,
+                new PropertyPath(MatrixTransform.MatrixProperty));
+
+            // Create a Storyboard to contain and apply the animation.
+            Storyboard pathAnimationStoryboard = new Storyboard();
+            pathAnimationStoryboard.Children.Add(matrixAnimation);
+
+            // Start the storyboard when the button is loaded.
+            pathAnimationStoryboard.Completed += (o, s) => {
+                img_animazione.Visibility = Visibility.Collapsed;
+                im.Visibility = Visibility.Collapsed;
+                if(immagineArrivo!=null)immagineArrivo.Source = new BitmapImage(new Uri(cartaDaSpostare.Percorso,UriKind.RelativeOrAbsolute));
+                cartaDaSpostare = null;
+            };
+            pathAnimationStoryboard.Begin(this);
+           
+
+        }
+        private void SelezionaPosizioneBottone(object sender)
         {
             Exception ex = new Exception("Carta non presente");
             if (sender == btn_ausiliare1)
@@ -123,110 +325,6 @@ namespace ManuelitoWpf
                 mazzoDaSpostare = 1;
             }
         }
-        private void SelezionaPosizioniArrivo(object sender)
-        {
-            if (sender == btn_ausiliare1)
-            {
-                posizioneArrivo = Posizioni.Ausiliarie;
-                mazzoArrivo = 1;
-            }
-            else if (sender == btn_ausiliare2)
-            {
-                posizioneArrivo = Posizioni.Ausiliarie;
-                mazzoArrivo = 2;
-            }
-            else if (sender == btn_ausiliare3)
-            {
-                posizioneArrivo = Posizioni.Ausiliarie;
-                mazzoArrivo = 3;
-            }
-            else if (sender == btn_ausiliare4)
-            {
-                posizioneArrivo = Posizioni.Ausiliarie;
-                mazzoArrivo = 4;
-            }
-            else if (sender == btn_finale1)
-            {
-                posizioneArrivo = Posizioni.Finali;
-                mazzoArrivo = 1;
-            }
-            else if (sender == btn_finale2)
-            {
-                posizioneArrivo = Posizioni.Finali;
-                mazzoArrivo = 2;
-            }
-            else if (sender == btn_finale3)
-            {
-                posizioneArrivo = Posizioni.Finali;
-                mazzoArrivo = 3;
-            }
-            else if (sender == btn_finale4)
-            {
-                posizioneArrivo = Posizioni.Finali;
-                mazzoArrivo = 4;
-            }
-            else if (sender == btn_cartaestratta_1)
-            {
-                posizioneArrivo = Posizioni.Centrale;
-                mazzoArrivo = 1;
-            }
-        }
-        private void ClickCarta(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                if (modalitaSelezioneCarta)
-                {
-                    SelezionaCartaDaBottone(sender);
-                    btnCartaSelezionata = (Button)sender;
-                    modalitaSelezioneCarta = false;
-                    btnCartaSelezionata.Background = Brushes.Cyan;
-                }
-                else
-                {
-                    if ((Button)sender == btnCartaSelezionata)
-                    {
-                        modalitaSelezioneCarta = true;
-                        btnCartaSelezionata.Background = Brushes.Transparent;
-                    }
-                    else
-                    {
-                        SelezionaPosizioniArrivo(sender);
-                        partitaManuelito.MuoviCarta(posizioneDaSpostare, mazzoDaSpostare, posizioneArrivo, mazzoArrivo);
-                        modalitaSelezioneCarta = true;
-                        AggiornaImmagini();
-                        btnCartaSelezionata.Background = Brushes.Transparent;
-                    }
-                }
-                if (partitaManuelito.VerificaVittoria) Vittoria();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            
-        }
-
-        private void mazzo_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                if (partitaManuelito.Mazzo.Vuoto)
-                {
-                    partitaManuelito.RicostruisciMazzo();
-                }
-                else
-                {
-                    partitaManuelito.PescaMano();
-                }
-                AggiornaImmagini();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
         private void AggiornaImmagini()
         {
             Carta? carta;
@@ -240,9 +338,7 @@ namespace ManuelitoWpf
             else
             {
                 img_ausiliare1.Visibility = Visibility.Visible;
-                nomeImg = "/images/Carte/" + ((int)(carta.Valore)).ToString() + carta.Seme.ToString() + ".jpg";
-                var uriSource = new Uri(nomeImg, UriKind.Relative);
-                img_ausiliare1.Source = new BitmapImage(uriSource);
+                img_ausiliare1.Source = new BitmapImage(new Uri(carta.Percorso, UriKind.Relative));
             }
             //ausiliare 2
             carta = partitaManuelito.GuardaCartaInCimaAPosizioni(Posizioni.Ausiliarie, 2);
@@ -252,10 +348,8 @@ namespace ManuelitoWpf
             }
             else
             {
-                nomeImg = "/images/Carte/" + ((int)(carta.Valore)).ToString() + carta.Seme.ToString() + ".jpg";
-                var uriSource = new Uri(nomeImg, UriKind.Relative);
                 img_ausiliare2.Visibility = Visibility.Visible;
-                img_ausiliare2.Source = new BitmapImage(uriSource);
+                img_ausiliare2.Source = new BitmapImage(new Uri(carta.Percorso, UriKind.Relative));
             }
             //ausiliare 3
             carta = partitaManuelito.GuardaCartaInCimaAPosizioni(Posizioni.Ausiliarie, 3);
@@ -265,10 +359,8 @@ namespace ManuelitoWpf
             }
             else
             {
-                nomeImg = "/images/Carte/" + ((int)(carta.Valore)).ToString() + carta.Seme.ToString() + ".jpg";
-                var uriSource = new Uri(nomeImg, UriKind.Relative);
                 img_ausiliare3.Visibility = Visibility.Visible;
-                img_ausiliare3.Source = new BitmapImage(uriSource);
+                img_ausiliare3.Source = new BitmapImage(new Uri(carta.Percorso, UriKind.Relative));
             }
             //ausiliare 4
             carta = partitaManuelito.GuardaCartaInCimaAPosizioni(Posizioni.Ausiliarie, 4);
@@ -278,10 +370,8 @@ namespace ManuelitoWpf
             }
             else
             {
-                nomeImg = "/images/Carte/" + ((int)(carta.Valore)).ToString() + carta.Seme.ToString() + ".jpg";
-                var uriSource = new Uri(nomeImg, UriKind.Relative);
                 img_ausiliare4.Visibility = Visibility.Visible;
-                img_ausiliare4.Source = new BitmapImage(uriSource);
+                img_ausiliare4.Source = new BitmapImage(new Uri(carta.Percorso, UriKind.Relative));
             }
             //finale 1
             carta = partitaManuelito.GuardaCartaInCimaAPosizioni(Posizioni.Finali, 1);
@@ -291,10 +381,8 @@ namespace ManuelitoWpf
             }
             else
             {
-                nomeImg = "/images/Carte/" + ((int)(carta.Valore)).ToString() + carta.Seme.ToString() + ".jpg";
-                var uriSource = new Uri(nomeImg, UriKind.Relative);
                 img_finale1.Visibility = Visibility.Visible;
-                img_finale1.Source = new BitmapImage(uriSource);
+                img_finale1.Source = new BitmapImage(new Uri(carta.Percorso, UriKind.Relative));
             }
             //finale 2
             carta = partitaManuelito.GuardaCartaInCimaAPosizioni(Posizioni.Finali, 2);
@@ -304,10 +392,8 @@ namespace ManuelitoWpf
             }
             else
             {
-                nomeImg = "/images/Carte/" + ((int)(carta.Valore)).ToString() + carta.Seme.ToString() + ".jpg";
-                var uriSource = new Uri(nomeImg, UriKind.Relative);
                 img_finale2.Visibility = Visibility.Visible;
-                img_finale2.Source = new BitmapImage(uriSource);
+                img_finale2.Source = new BitmapImage(new Uri(carta.Percorso, UriKind.Relative));
             }
             //finale 3
             carta = partitaManuelito.GuardaCartaInCimaAPosizioni(Posizioni.Finali, 3);
@@ -317,10 +403,8 @@ namespace ManuelitoWpf
             }
             else
             {
-                nomeImg = "/images/Carte/" + ((int)(carta.Valore)).ToString() + carta.Seme.ToString() + ".jpg";
-                var uriSource = new Uri(nomeImg, UriKind.Relative);
                 img_finale3.Visibility = Visibility.Visible;
-                img_finale3.Source = new BitmapImage(uriSource);
+                img_finale3.Source = new BitmapImage(new Uri(carta.Percorso, UriKind.Relative));
             }
             //finale 4
             carta = partitaManuelito.GuardaCartaInCimaAPosizioni(Posizioni.Finali, 4);
@@ -330,10 +414,8 @@ namespace ManuelitoWpf
             }
             else
             {
-                nomeImg = "/images/Carte/" + ((int)(carta.Valore)).ToString() + carta.Seme.ToString() + ".jpg";
-                var uriSource = new Uri(nomeImg, UriKind.Relative);
                 img_finale4.Visibility = Visibility.Visible;
-                img_finale4.Source = new BitmapImage(uriSource);
+                img_finale4.Source = new BitmapImage(new Uri(carta.Percorso, UriKind.Relative));
             }
             //centro 1
             carta = partitaManuelito.GuardaCartaInCimaAPosizioni(Posizioni.Centrale, 1);
@@ -343,10 +425,8 @@ namespace ManuelitoWpf
             }
             else
             {
-                nomeImg = "/images/Carte/" + ((int)(carta.Valore)).ToString() + carta.Seme.ToString() + ".jpg";
-                var uriSource = new Uri(nomeImg, UriKind.Relative);
                 img_cartaEstratta1.Visibility = Visibility.Visible;
-                img_cartaEstratta1.Source = new BitmapImage(uriSource);
+                img_cartaEstratta1.Source = new BitmapImage(new Uri(carta.Percorso, UriKind.Relative));
             }
             //centro 2
             carta = partitaManuelito.GuardaCartaInCimaAPosizioni(Posizioni.Centrale, 2);
@@ -356,10 +436,8 @@ namespace ManuelitoWpf
             }
             else
             {
-                nomeImg = "/images/Carte/" + ((int)(carta.Valore)).ToString() + carta.Seme.ToString() + ".jpg";
-                var uriSource = new Uri(nomeImg, UriKind.Relative);
                 img_cartaEstratta2.Visibility = Visibility.Visible;
-                img_cartaEstratta2.Source = new BitmapImage(uriSource);
+                img_cartaEstratta2.Source = new BitmapImage(new Uri(carta.Percorso, UriKind.Relative));
             }
             //centro 3
             carta = partitaManuelito.GuardaCartaInCimaAPosizioni(Posizioni.Centrale, 3);
@@ -369,10 +447,8 @@ namespace ManuelitoWpf
             }
             else
             {
-                nomeImg = "/images/Carte/" + ((int)(carta.Valore)).ToString() + carta.Seme.ToString() + ".jpg";
-                var uriSource = new Uri(nomeImg, UriKind.Relative);
                 img_cartaEstratta3.Visibility = Visibility.Visible;
-                img_cartaEstratta3.Source = new BitmapImage(uriSource);
+                img_cartaEstratta3.Source = new BitmapImage(new Uri(carta.Percorso, UriKind.Relative));
             }
             //mazzo
             if (partitaManuelito.Mazzo.Vuoto)
@@ -386,37 +462,6 @@ namespace ManuelitoWpf
                 var uriSource = new Uri(nomeImg, UriKind.Relative);
                 img_mazzo.Source = new BitmapImage(uriSource);
             }
-        }
-
-        private void btn_Resa_Click(object sender, RoutedEventArgs e)
-        {
-            if (MessageBox.Show("Vuoi giocare ancora?",
-                    "Sconfitta",
-                    MessageBoxButton.YesNo,
-                    MessageBoxImage.Question) == MessageBoxResult.Yes)
-            {
-                PartitaM p = new PartitaM();
-                p.Owner = this;
-                p.Show();
-                p.Owner = null;
-            }
-            this.Close();
-        }   
-            
-            
-        private void Vittoria()
-        {
-            if (MessageBox.Show("Vuoi giocare ancora?",
-                    "Vittoria",
-                    MessageBoxButton.YesNo,
-                    MessageBoxImage.Question) == MessageBoxResult.Yes)
-            {
-                PartitaM p = new PartitaM();
-                p.Owner = this;
-                p.Show();
-                p.Owner = null;
-            }
-            this.Close();
         }
     }
 }
