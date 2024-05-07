@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Ribbon.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -26,7 +27,7 @@ namespace ManuelitoWpf
         PartitaManuelito partitaManuelito;
         bool modalitaSelezioneCarta;
 
-        Carta cartaDaSpostare;
+        Carta? cartaDaSpostare;
         Posizioni posizioneDaSpostare;
         int mazzoDaSpostare;
         Button btnCartaSelezionata;
@@ -47,7 +48,7 @@ namespace ManuelitoWpf
             Height = 760;
             Width = 380;
             WindowStartupLocation = WindowStartupLocation.CenterOwner;
-            img_animazione.Source = new BitmapImage(new Uri("/images/carte/10A.jpg", UriKind.Relative));
+            img_animazione.Visibility = Visibility.Collapsed;
         }
         private void BottoniInvisibili()
         {
@@ -136,10 +137,6 @@ namespace ManuelitoWpf
                         partitaManuelito.MuoviCarta(posizioneDaSpostare, mazzoDaSpostare, posizioneArrivo, mazzoArrivo);
                         Animazione();
                         modalitaSelezioneCarta = true;
-                        string? percorsoImmagineSotto = null;
-                        if (immagineArrivo!=null) percorsoImmagineSotto = Convert.ToString(immagineArrivo.Source);
-                        AggiornaImmagini();
-                        if(percorsoImmagineSotto!=null)immagineArrivo.Source = new BitmapImage(new Uri(percorsoImmagineSotto, UriKind.RelativeOrAbsolute));
                         btnCartaSelezionata.Background = Brushes.Transparent;                   
                     }
                 }
@@ -163,6 +160,8 @@ namespace ManuelitoWpf
                     partitaManuelito.PescaMano();
                 }
                 AggiornaImmagini();
+                modalitaSelezioneCarta = true;
+                if(btnCartaSelezionata!=null)btnCartaSelezionata.Background = Brushes.Transparent;
             }
             catch (Exception ex)
             {
@@ -232,10 +231,12 @@ namespace ManuelitoWpf
             // Create a MatrixAnimationUsingPath to move the
             // button along the path by animating
             // its MatrixTransform.
-            MatrixAnimationUsingPath matrixAnimation =
-                new MatrixAnimationUsingPath();
+            MatrixAnimationUsingPath matrixAnimation = new MatrixAnimationUsingPath();
             matrixAnimation.PathGeometry = animationPath;
-            matrixAnimation.Duration = TimeSpan.FromSeconds(0.5);
+            double velocita = 655.0;
+            double spazio = Math.Sqrt(Math.Abs(x*x) + Math.Abs(y*y));
+            double tempo = spazio / velocita;
+            matrixAnimation.Duration = TimeSpan.FromSeconds(tempo);
 
             // Set the animation to target the Matrix property
             // of the MatrixTransform named "ButtonMatrixTransform".
@@ -247,11 +248,16 @@ namespace ManuelitoWpf
             Storyboard pathAnimationStoryboard = new Storyboard();
             pathAnimationStoryboard.Children.Add(matrixAnimation);
 
-            // Start the storyboard when the button is loaded.
+            
+            ImageSource percorsoImmagineArrivo = (btnArrivo.Content as System.Windows.Controls.Image).Source;
+            Visibility visibilitaImmagineArrivo = (btnArrivo.Content as System.Windows.Controls.Image).Visibility;
+            AggiornaImmagini();
+            (btnArrivo.Content as System.Windows.Controls.Image).Source = percorsoImmagineArrivo;
+            (btnArrivo.Content as System.Windows.Controls.Image).Visibility = visibilitaImmagineArrivo;
             pathAnimationStoryboard.Completed += (o, s) => {
                 img_animazione.Visibility = Visibility.Collapsed;
                 im.Visibility = Visibility.Collapsed;
-                if(immagineArrivo!=null)immagineArrivo.Source = new BitmapImage(new Uri(cartaDaSpostare.Percorso,UriKind.RelativeOrAbsolute));
+                AggiornaImmagini();
                 cartaDaSpostare = null;
             };
             pathAnimationStoryboard.Begin(this);
@@ -463,5 +469,8 @@ namespace ManuelitoWpf
                 img_mazzo.Source = new BitmapImage(uriSource);
             }
         }
+       // public void 
+
     }
+
 }
