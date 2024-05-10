@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lorenzo.morini\\Desktop\\program\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\ManuelitoWpf.csproj",
+      "projectUniqueName": "C:\\Users\\lorenzo.morini\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\ManuelitoWpf.csproj",
       "projectName": "ManuelitoWpf",
-      "projectPath": "C:\\Users\\lorenzo.morini\\Desktop\\program\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\ManuelitoWpf.csproj",
+      "projectPath": "C:\\Users\\lorenzo.morini\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\ManuelitoWpf.csproj",
       "packagesPath": "C:\\Users\\lorenzo.morini\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lorenzo.morini\\Desktop\\program\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\obj\\",
+      "outputPath": "C:\\Users\\lorenzo.morini\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -59,8 +59,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\lorenzo.morini\\Desktop\\program\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj": {
-              "projectPath": "C:\\Users\\lorenzo.morini\\Desktop\\program\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj"
+            "C:\\Users\\lorenzo.morini\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj": {
+              "projectPath": "C:\\Users\\lorenzo.morini\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj"
             }
           }
         }

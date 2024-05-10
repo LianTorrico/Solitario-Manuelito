@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -49,6 +50,16 @@ namespace ManuelitoWpf
             Width = 380;
             WindowStartupLocation = WindowStartupLocation.CenterOwner;
             img_animazione.Visibility = Visibility.Collapsed;
+           /* AnimazioneMazzetti(btn_ausiliare1);
+            AnimazioneMazzetti(btn_ausiliare2);
+            AnimazioneMazzetti(btn_ausiliare3);
+            AnimazioneMazzetti(btn_ausiliare4);
+            AnimazioneMazzetti(btn_finale1);
+            AnimazioneMazzetti(btn_finale2);
+            AnimazioneMazzetti(btn_finale3);
+            AnimazioneMazzetti(btn_finale4);
+            AnimazioneMazzetti(btn_cartaestratta_1);*/
+
         }
         private void BottoniInvisibili()
         {
@@ -196,6 +207,30 @@ namespace ManuelitoWpf
             }
             this.Close();
         }
+       /* private void AnimazioneMazzetti(Button bottone)
+        {
+            System.Windows.Controls.Image immagine = bottone.Content as System.Windows.Controls.Image;
+            this.RegisterName(
+                immagine.Name, immagine);
+
+            DoubleAnimation myDoubleAnimation = new DoubleAnimation();
+            myDoubleAnimation.To = 300;
+            myDoubleAnimation.Duration =
+                new Duration(TimeSpan.FromSeconds(2));
+
+            Storyboard.SetTargetName(myDoubleAnimation, immagine.Name);
+            Storyboard.SetTargetProperty(myDoubleAnimation,
+                new PropertyPath(immagine.WidthProperty));
+            Storyboard myStoryboard = new Storyboard();
+            myStoryboard.Children.Add(myDoubleAnimation);
+
+            // Use an anonymous event handler to begin the animation
+            // when the rectangle is clicked.
+            myRectangle.MouseLeftButtonDown += delegate (object sender, MouseButtonEventArgs args)
+            {
+                myStoryboard.Begin(myRectangle);
+            };
+        }*/
         private void Animazione()
         {
             System.Windows.Controls.Image? im = new System.Windows.Controls.Image();
@@ -211,58 +246,48 @@ namespace ManuelitoWpf
             // Register the transform's name with the page
             // so that it can be targeted by a Storyboard.
             this.RegisterName("img_animazione", buttonMatrixTransform);
-
             double x = btnArrivo.Margin.Left - btnCartaSelezionata.Margin.Left;
             double y = btnArrivo.Margin.Top - btnCartaSelezionata.Margin.Top;
-            // Create the animation path.
+            // Creo il segmento della animazione
             PathGeometry animationPath = new PathGeometry();
             PathFigure pFigure = new PathFigure();
-            pFigure.StartPoint = new Point(0,0);
+            pFigure.StartPoint = new System.Windows.Point(0,0);
             PolyBezierSegment pBezierSegment = new PolyBezierSegment();
             pBezierSegment.Points.Add(pFigure.StartPoint);
-            pBezierSegment.Points.Add(new Point(x,y));
-            pBezierSegment.Points.Add(new Point(x, y));
+            pBezierSegment.Points.Add(new System.Windows.Point(x,y));
+            pBezierSegment.Points.Add(new System.Windows.Point(x, y));
             pFigure.Segments.Add(pBezierSegment);
             animationPath.Figures.Add(pFigure);
-
-            // Freeze the PathGeometry for performance benefits.
             animationPath.Freeze();
-
-            // Create a MatrixAnimationUsingPath to move the
-            // button along the path by animating
-            // its MatrixTransform.
+            //lo metto nella animazione
             MatrixAnimationUsingPath matrixAnimation = new MatrixAnimationUsingPath();
             matrixAnimation.PathGeometry = animationPath;
-            double velocita = 655.0;
+            //calcolo il tempo in modo che la velocità sia sempre la stessa anche se cambia la distanza
+            double velocita = 1500.0;
             double spazio = Math.Sqrt(Math.Abs(x*x) + Math.Abs(y*y));
             double tempo = spazio / velocita;
             matrixAnimation.Duration = TimeSpan.FromSeconds(tempo);
-
-            // Set the animation to target the Matrix property
-            // of the MatrixTransform named "ButtonMatrixTransform".
+            //imposto l'animazione nella storyboard
             Storyboard.SetTargetName(matrixAnimation, "img_animazione");
             Storyboard.SetTargetProperty(matrixAnimation,
                 new PropertyPath(MatrixTransform.MatrixProperty));
-
-            // Create a Storyboard to contain and apply the animation.
             Storyboard pathAnimationStoryboard = new Storyboard();
             pathAnimationStoryboard.Children.Add(matrixAnimation);
-
-            
+            //mi salvo il percorso dell'immagine di arrivo e ce lo rimetto dopo aver aggiornato le immagini, per poi riaggiornarlo alla fine della animazione
             ImageSource percorsoImmagineArrivo = (btnArrivo.Content as System.Windows.Controls.Image).Source;
             Visibility visibilitaImmagineArrivo = (btnArrivo.Content as System.Windows.Controls.Image).Visibility;
             AggiornaImmagini();
             (btnArrivo.Content as System.Windows.Controls.Image).Source = percorsoImmagineArrivo;
             (btnArrivo.Content as System.Windows.Controls.Image).Visibility = visibilitaImmagineArrivo;
+            DisattivaBottoni();
             pathAnimationStoryboard.Completed += (o, s) => {
                 img_animazione.Visibility = Visibility.Collapsed;
                 im.Visibility = Visibility.Collapsed;
                 AggiornaImmagini();
                 cartaDaSpostare = null;
+                AttivaBottoni();
             };
             pathAnimationStoryboard.Begin(this);
-           
-
         }
         private void SelezionaPosizioneBottone(object sender)
         {
@@ -469,7 +494,33 @@ namespace ManuelitoWpf
                 img_mazzo.Source = new BitmapImage(uriSource);
             }
         }
-       // public void 
+        private void DisattivaBottoni()
+        {
+            btn_ausiliare1.IsHitTestVisible = false;
+            btn_ausiliare2.IsHitTestVisible = false;
+            btn_ausiliare3.IsHitTestVisible = false;
+            btn_ausiliare4.IsHitTestVisible = false;
+            btn_finale1.IsHitTestVisible = false;
+            btn_finale2.IsHitTestVisible = false;
+            btn_finale3.IsHitTestVisible = false;
+            btn_finale4.IsHitTestVisible = false;
+            btn_cartaestratta_1.IsHitTestVisible = false;
+            btn_mazzo.IsHitTestVisible = false;
+        }
+        private void AttivaBottoni()
+        {
+            btn_ausiliare1.IsHitTestVisible = true;
+            btn_ausiliare2.IsHitTestVisible = true;
+            btn_ausiliare3.IsHitTestVisible = true;
+            btn_ausiliare4.IsHitTestVisible = true;
+            btn_finale1.IsHitTestVisible = true;
+            btn_finale2.IsHitTestVisible = true;
+            btn_finale3.IsHitTestVisible = true;
+            btn_finale4.IsHitTestVisible = true;
+            btn_cartaestratta_1.IsHitTestVisible = true;
+            btn_mazzo.IsHitTestVisible = true;
+
+        }
 
     }
 
