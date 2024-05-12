@@ -30,6 +30,7 @@ namespace ManuelitoWpf
         bool modalitaSelezioneCarta;
         Button[] bottoniFinali;
         Button[] bottoniAusiliari;
+        int mosse;
 
         Carta? cartaDaSpostare;
 
@@ -52,6 +53,7 @@ namespace ManuelitoWpf
             bottoniFinali = new Button[4] { btn_finale1, btn_finale2, btn_finale3, btn_finale4 };
             AggiornaImmagini();
             BottoniInvisibili();
+            mosse = 0;
             /* AnimazioneMazzetti(btn_ausiliare1);
              AnimazioneMazzetti(btn_ausiliare2);
              AnimazioneMazzetti(btn_ausiliare3);
@@ -61,7 +63,6 @@ namespace ManuelitoWpf
              AnimazioneMazzetti(btn_finale3);
              AnimazioneMazzetti(btn_finale4);
              AnimazioneMazzetti(btn_cartaestratta_1);*/
-
         }
         
         private void ClickCarta(object sender, RoutedEventArgs e)
@@ -87,9 +88,11 @@ namespace ManuelitoWpf
                         SelezionaMazzettoArrivo(sender);
                         btnArrivo = (Button)sender;
                         partitaManuelito.MuoviCarta(mazzettoPartenza.TipoPosizioni, mazzettoPartenza.Numero, mazzettoArrivo.TipoPosizioni, mazzettoArrivo.Numero);
-                        Animazione();
+                        AnimazioneEAggiornamentoImmagini();
                         modalitaSelezioneCarta = true;
-                        btnPartenza.Background = Brushes.Transparent;                   
+                        btnPartenza.Background = Brushes.Transparent;
+                        mosse++;
+                        lbl_mosse.Content = "Mosse: " + mosse.ToString();
                     }
                 }
                 if (partitaManuelito.VerificaVittoria) Vittoria();
@@ -222,7 +225,7 @@ namespace ManuelitoWpf
                  myStoryboard.Begin(myRectangle);
              };
          }*/
-        private void Animazione()
+        private void AnimazioneEAggiornamentoImmagini()
         {
             System.Windows.Controls.Image? im = new System.Windows.Controls.Image();
             NameScope.SetNameScope(this, new NameScope());
@@ -323,7 +326,7 @@ namespace ManuelitoWpf
             //centrali
             for(int i=0;i<3;i++)
             {
-                cartaInCima = partitaManuelito.GuardaCartaPosizione(Posizioni.Centrale, 0);
+                cartaInCima = partitaManuelito.GuardaCartaPosizione(Posizioni.Centrale, i);
                 if (i == 0) Immagine = img_cartaEstratta1;
                 if (i == 1) Immagine = img_cartaEstratta2;
                 if (i == 2) Immagine = img_cartaEstratta3;

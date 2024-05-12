@@ -51,7 +51,5 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/retro.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/menu.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/partita.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/perdita.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/vincita.png")]
 
 

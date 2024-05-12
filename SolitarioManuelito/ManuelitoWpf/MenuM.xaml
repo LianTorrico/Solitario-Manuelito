@@ -9,7 +9,7 @@
       Title="Menù">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/menu.png" Stretch="UniformToFill"></ImageBrush>
+            <ImageBrush ImageSource="/images/menu.png" Stretch="UniformToFill"></ImageBrush>
         </Grid.Background>
         <Button x:Name="btn_Gioca" Content="Gioca" Margin="73,394,73,260" BorderBrush="{x:Null}" Click="btn_Gioca_Click" Background="#FF27A216" Foreground="White" FontSize="28" >
             <Button.Resources>
