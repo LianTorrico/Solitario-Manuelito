@@ -6357,11 +6357,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\TestSolitario\\TestSolitario.csproj",
+      "projectUniqueName": "C:\\Users\\loren\\OneDrive\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\TestSolitario\\TestSolitario.csproj",
       "projectName": "TestSolitario",
-      "projectPath": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\TestSolitario\\TestSolitario.csproj",
+      "projectPath": "C:\\Users\\loren\\OneDrive\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\TestSolitario\\TestSolitario.csproj",
       "packagesPath": "C:\\Users\\loren\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\TestSolitario\\obj\\",
+      "outputPath": "C:\\Users\\loren\\OneDrive\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\TestSolitario\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\loren\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6378,8 +6378,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj": {
-              "projectPath": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj"
+            "C:\\Users\\loren\\OneDrive\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj": {
+              "projectPath": "C:\\Users\\loren\\OneDrive\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj"
             }
           }
         }

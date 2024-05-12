@@ -94,7 +94,7 @@
             </Button.Resources>
             <Image x:Name="img_cartaEstratta1" Height="116" Width="65"/>
         </Button>
-        <Button x:Name="btn_mazzo" Margin="64,264,216,324" Click="mazzo_Click" BorderBrush="#00000000" >
+        <Button x:Name="btn_mazzo" Margin="64,264,216,324" Click="Mazzo_Click" BorderBrush="#00000000" >
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="11"></Setter>

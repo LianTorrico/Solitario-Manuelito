@@ -15,9 +15,9 @@ namespace SolitarioClassi
     public class PartitaManuelito
     {
         private Mazzo _mazzo;
-        private PosizioniFinali _posizioniFinali;
-        private PosizioniAusiliarie _posizioniAusiliarie;
-        private List<Carta> _carteUscite;
+        private Mazzetto[] _posizioniFinali;
+        private Mazzetto[] _posizioniAusiliarie;
+        private Mazzetto _carteUscite;
         /// <summary>
         /// Crea la partita con mazzo mescolato e le prime 4 carte estratte dal mazzo nelle posizioni ausiliarie
         /// </summary>
@@ -25,9 +25,18 @@ namespace SolitarioClassi
         {
             _mazzo = new Mazzo();
             _mazzo.Mescola();
-            _posizioniFinali = new PosizioniFinali();
-            _posizioniAusiliarie = new PosizioniAusiliarie(_mazzo.PescaCarta(), _mazzo.PescaCarta(), _mazzo.PescaCarta(), _mazzo.PescaCarta());
-            _carteUscite = new List<Carta>();
+            _posizioniFinali = new Mazzetto[4];
+            for (int i = 0; i < 4; i++)
+            {
+                _posizioniFinali[i] = new Mazzetto(Posizioni.Finali, i);
+            }
+            _posizioniAusiliarie = new Mazzetto[4];
+            for (int i = 0; i < 4; i++)
+            {
+                _posizioniAusiliarie[i] = new Mazzetto(Posizioni.Ausiliarie, i);
+                _posizioniAusiliarie[i].AggiungiCarta(_mazzo.PescaCarta());
+            }
+            _carteUscite = new Mazzetto(Posizioni.Centrale, 0);
         }
         /// <summary>
         /// Proprietà di get del mazzo
@@ -39,7 +48,7 @@ namespace SolitarioClassi
         /// <summary>
         /// Proprietà con solo get delle carte uscite
         /// </summary>
-        public List<Carta> CarteUscite
+        public Mazzetto CarteUscite
         {
             get { return _carteUscite; }
         }
@@ -49,9 +58,9 @@ namespace SolitarioClassi
         public void PescaMano()
         {
             if (_mazzo.Vuoto) throw new Exception("il mazzo è vuoto");
-            _carteUscite.Add(_mazzo.PescaCarta());
-            if(!_mazzo.Vuoto)_carteUscite.Add(_mazzo.PescaCarta());
-            if(!_mazzo.Vuoto) _carteUscite.Add(_mazzo.PescaCarta());
+            _carteUscite.AggiungiCarta(_mazzo.PescaCarta());
+            if(!_mazzo.Vuoto)_carteUscite.AggiungiCarta(_mazzo.PescaCarta());
+            if(!_mazzo.Vuoto) _carteUscite.AggiungiCarta(_mazzo.PescaCarta());
         }
         /// <summary>
         /// Muovi carta da posizioni ausiliarie o finali o centrali a posizioni ausiliarie o finali 
@@ -62,17 +71,69 @@ namespace SolitarioClassi
         /// <param name="mazzoArrivo"></param>
         public void MuoviCarta(Posizioni posizionePartenza, int mazzoPartenza, Posizioni posizioneArrivo, int mazzoArrivo)
         {
-            if (mazzoPartenza < 0 || mazzoPartenza > 4) throw new ArgumentOutOfRangeException("mazzo di partenza scelto deve essere tra 1 e 4");
-            if (mazzoArrivo < 0 || mazzoArrivo > 4) throw new ArgumentOutOfRangeException("mazzo di partenza scelto deve essere tra 1 e 4");
+            if (mazzoPartenza < 0 || mazzoPartenza > 3) throw new ArgumentOutOfRangeException("mazzo di partenza scelto deve essere tra 0 e 3");
+            if (mazzoArrivo < 0 || mazzoArrivo > 3) throw new ArgumentOutOfRangeException("mazzo di partenza scelto deve essere tra 0 e 3");
             if ((int)posizioneArrivo < 1 || (int)posizioneArrivo > 2) throw new ArgumentException("posizione di arrivo non valida");
             if ((int)posizionePartenza < 0 || (int)posizionePartenza > 2) throw new ArgumentException("posizione di partenza non valida");
             Carta? cartaDaSpostare;
-            cartaDaSpostare = GuardaCartaInCimaAPosizioni(posizionePartenza, mazzoPartenza);
+            cartaDaSpostare = GuardaCartaPosizione(posizionePartenza, mazzoPartenza);
             if (cartaDaSpostare == null) throw new Exception("carta inesistente");
-            if (posizioneArrivo == Posizioni.Ausiliarie) _posizioniAusiliarie.AggiungiCarta(cartaDaSpostare, mazzoArrivo);
-            else if(posizioneArrivo== Posizioni.Finali) _posizioniFinali.AggiungiCarta(cartaDaSpostare, mazzoArrivo);
-            RimuoviCartaInCimaAPoisizioni(posizionePartenza, mazzoPartenza);
-            
+            AggiungiCartaPosizione(posizioneArrivo, mazzoArrivo, cartaDaSpostare);
+            RimuoviCartaPosizione(posizionePartenza, mazzoPartenza);
+        }
+        public Carta? GuardaCartaPosizione(Posizioni posizione, int mazzo)
+        {
+            if ((int)posizione < 0 || (int)posizione > 2) throw new ArgumentException("posizione non valida");
+            if (mazzo < 0 || mazzo > 3) throw new ArgumentException("mazzo deve essere tra 0 e 3");
+            Carta? cartaGuardata;
+            if (posizione == Posizioni.Ausiliarie)
+            {
+                cartaGuardata = _posizioniAusiliarie[mazzo].GuardaCarta();
+            }
+            else if (posizione == Posizioni.Finali)
+            {
+                cartaGuardata = _posizioniFinali[mazzo].GuardaCarta();
+            }
+            else
+            {
+                if (_carteUscite.Carte.Count -1- mazzo >= 0) cartaGuardata = _carteUscite.Carte[_carteUscite.Carte.Count -1 - mazzo];
+                else cartaGuardata = null;
+            }
+            return cartaGuardata;
+        }
+        private Carta? RimuoviCartaPosizione(Posizioni posizione, int mazzo)
+        {
+            if ((int)posizione < 0 || (int)posizione > 2) throw new ArgumentException("posizione non valida");
+            if (mazzo < 0 || mazzo > 3) throw new ArgumentException("mazzo deve essere tra 0 e 3");
+            Carta? cartaRimossa;
+            if (posizione == Posizioni.Ausiliarie)
+            {
+                cartaRimossa = _posizioniAusiliarie[mazzo].RimuoviCarta();
+            }
+            else if (posizione == Posizioni.Finali)
+            {
+                cartaRimossa = _posizioniFinali[mazzo].RimuoviCarta();
+            }
+            else 
+            {
+                cartaRimossa = _carteUscite.RimuoviCarta();
+            }
+            return cartaRimossa;
+        }
+        private void AggiungiCartaPosizione(Posizioni posizione, int mazzo, Carta carta)
+        {
+            if ((int)posizione < 0 || (int)posizione > 2) throw new ArgumentException("posizione non valida");
+            if (mazzo < 0 || mazzo > 3) throw new ArgumentException("mazzo deve essere tra 0 e 3");
+            if (carta == null) throw new ArgumentException("carta null");
+            if (posizione == Posizioni.Ausiliarie)
+            {
+                _posizioniAusiliarie[mazzo].AggiungiCarta(carta);
+            }
+            else if (posizione == Posizioni.Finali)
+            {
+                _posizioniFinali[mazzo].AggiungiCarta(carta);
+            }
+            else throw new Exception("posizione non valida");
         }
         /// <summary>
         /// Ricostruisce il mazzo con le carte estratte che vengono svuotate
@@ -80,9 +141,9 @@ namespace SolitarioClassi
         public void RicostruisciMazzo()
         {
             List<Carta> cartaSpostare = new List<Carta> ();
-            foreach(Carta carta in _carteUscite)cartaSpostare.Add(carta);
+            foreach(Carta carta in _carteUscite.Carte)cartaSpostare.Add(carta);
             _mazzo.Ricostruisci(cartaSpostare);
-            _carteUscite.Clear();
+            _carteUscite.Svuota();
         }
         /// <summary>
         /// Verifica se la partita è stata vinta
@@ -90,8 +151,17 @@ namespace SolitarioClassi
         public bool VerificaVittoria
         {
             get
-            {
-                return _posizioniFinali.VerificaSePiene;
+            {                
+                bool vittoria = true;
+                foreach(Mazzetto m in _posizioniFinali)
+                {
+                    if(m.Carte.Count != 10)
+                    {
+                        vittoria = false;
+                        break;
+                    }
+                }
+                return vittoria;
             }
         }
         /// <summary>
@@ -101,48 +171,5 @@ namespace SolitarioClassi
         {
             //skill issue
         }
-        /// <summary>
-        /// Restituice la carta in cima al mazzo scelto (da 1 a 4) delle posizioni scelte (o finali o ausiliarie o centrali), null se carta non presente
-        /// </summary>
-        /// <param name="posizione"></param>
-        /// <param name="mazzo"></param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
-        /// <exception cref="ArgumentException"></exception>
-        public Carta? GuardaCartaInCimaAPosizioni(Posizioni posizione, int mazzo)
-        {
-            if (mazzo < 0 || mazzo > 4) throw new ArgumentOutOfRangeException("mazzo di partenza scelto deve essere tra 1 e 4");
-            if ((int)posizione < 0 || (int)posizione > 2) throw new ArgumentException("posizione non valida");
-            Carta? cartaGuardata;
-            if (posizione == Posizioni.Finali) cartaGuardata = _posizioniFinali.GuardaCartaInCima(mazzo);
-            else if (posizione == Posizioni.Ausiliarie) cartaGuardata = _posizioniAusiliarie.GuardaCartaInCima(mazzo);
-            else
-            {
-                if (_carteUscite.Count() - mazzo < 0) cartaGuardata = null;
-                else cartaGuardata = _carteUscite[_carteUscite.Count() - mazzo];
-            }
-            return cartaGuardata;
-        }
-        public Carta? RimuoviCartaInCimaAPoisizioni(Posizioni posizione, int mazzo)
-        {
-            if (mazzo < 0 || mazzo > 4) throw new ArgumentOutOfRangeException("mazzo di partenza scelto deve essere tra 1 e 4");
-            if ((int)posizione < 0 || (int)posizione > 2) throw new ArgumentException("posizione non valida");
-            Carta? cartaTolta;
-            if (posizione == Posizioni.Finali) cartaTolta = _posizioniFinali.RimuoviCarta(mazzo);
-            else if (posizione == Posizioni.Ausiliarie) cartaTolta = _posizioniAusiliarie.RimuoviCarta(mazzo);
-            else
-            {
-                if (_carteUscite.Count() - mazzo < 0) cartaTolta = null;
-                else
-                {
-                    cartaTolta = _carteUscite[_carteUscite.Count() - mazzo];
-                    _carteUscite.Remove(cartaTolta);
-                }
-                
-            }
-            return cartaTolta;
-        }
-
-
     }
 }

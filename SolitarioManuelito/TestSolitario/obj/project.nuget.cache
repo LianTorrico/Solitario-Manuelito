@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Fd5UfrVST5UQhCVA3EfWd60UeTmHY2fcDkyEqU04787BgOO8zJHCrCjzHFpW8/E01nwQN6GfKiCc84FcvOr60g==",
+  "dgSpecHash": "KJKAY+DZUVKlbRo6DUZ6e0whpo7GXqaq+BnRfDCCBe+LEjV1yG9zw/NOoP+4PEZmLB+gcFd+CMjbnY+eqOtSfA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\TestSolitario\\TestSolitario.csproj",
+  "projectFilePath": "C:\\Users\\loren\\OneDrive\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\TestSolitario\\TestSolitario.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\loren\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\loren\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",

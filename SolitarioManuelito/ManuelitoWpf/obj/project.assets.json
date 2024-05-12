@@ -27,24 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lorenzo.morini\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\loren\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lorenzo.morini\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\ManuelitoWpf.csproj",
+      "projectUniqueName": "C:\\Users\\loren\\OneDrive\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\ManuelitoWpf.csproj",
       "projectName": "ManuelitoWpf",
-      "projectPath": "C:\\Users\\lorenzo.morini\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\ManuelitoWpf.csproj",
-      "packagesPath": "C:\\Users\\lorenzo.morini\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lorenzo.morini\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\obj\\",
+      "projectPath": "C:\\Users\\loren\\OneDrive\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\ManuelitoWpf.csproj",
+      "packagesPath": "C:\\Users\\loren\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\loren\\OneDrive\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\lorenzo.morini\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\loren\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -52,15 +47,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\lorenzo.morini\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj": {
-              "projectPath": "C:\\Users\\lorenzo.morini\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj"
+            "C:\\Users\\loren\\OneDrive\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj": {
+              "projectPath": "C:\\Users\\loren\\OneDrive\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj"
             }
           }
         }
@@ -69,6 +63,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -93,7 +92,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.315\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }

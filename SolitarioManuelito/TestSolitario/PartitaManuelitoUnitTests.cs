@@ -8,7 +8,7 @@ namespace TestSolitario
         public void PescaMano_MazzoVuoto()
         {
             PartitaManuelito partitaTest = new PartitaManuelito();
-            for (int i = 0; i < 12 ; i++) partitaTest.PescaMano();
+            for (int i = 0; i < 13 ; i++) partitaTest.PescaMano();
             Assert.ThrowsException<Exception>(() => partitaTest.PescaMano());
         }
         [TestMethod]
@@ -16,7 +16,7 @@ namespace TestSolitario
         {
             PartitaManuelito partitaTest = new PartitaManuelito();
             partitaTest.PescaMano();
-            Assert.IsTrue(partitaTest.CarteUscite.Count() == 3);
+            Assert.IsTrue(partitaTest.CarteUscite.Carte.Count() == 3);
         }
         [TestMethod]
         public void RicostruisciMazzo_MazzoVieneRicostruito()
