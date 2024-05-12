@@ -104,7 +104,7 @@
             </Button.Resources>
             <Image x:Name="img_mazzo" Height="128" Width="81"/>
         </Button>
-        <Button x:Name="btn_Resa" Content="Resa" Margin="34,529,202,136" Click="btn_Resa_Click" Background="#FFF50F0F" FontWeight="Bold" Foreground="White" FontSize="24">
+        <Button x:Name="btn_Resa" Content="Resa" Margin="26,529,210,136" Click="btn_Resa_Click" Background="#FFF50F0F" FontWeight="Bold" Foreground="White" FontSize="24">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="30"></Setter>
@@ -112,7 +112,8 @@
             </Button.Resources>
         </Button>
         <Image x:Name="img_animazione" Height="100" Width="62" Margin="-263,226,551,388"/>
-        <Label x:Name="lbl_mosse" Content="Mosse: 0&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Height="39" Margin="201,534,0,0" VerticalAlignment="Top" Width="149" IsEnabled="False" Foreground="White" FontWeight="Bold" FontSize="24"/>
+        <Label x:Name="lbl_mosse" Content="Mosse: 0&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Height="39" Margin="212,544,0,0" VerticalAlignment="Top" Width="149" IsEnabled="False" Foreground="White" FontWeight="Bold" FontSize="24"/>
+        <Label x:Name="lbl_record" Content="Record:" HorizontalAlignment="Left" Height="39" Margin="9,133,0,0" VerticalAlignment="Top" Width="150" IsEnabled="False" Foreground="White" FontWeight="Bold" FontSize="24"/>
 
     </Grid>
 </Window>

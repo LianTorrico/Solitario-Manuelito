@@ -31,6 +31,7 @@ namespace ManuelitoWpf
         Button[] bottoniFinali;
         Button[] bottoniAusiliari;
         int mosse;
+        int? record;
 
         Carta? cartaDaSpostare;
 
@@ -54,6 +55,14 @@ namespace ManuelitoWpf
             AggiornaImmagini();
             BottoniInvisibili();
             mosse = 0;
+            GestoreSalvataggi gs = new GestoreSalvataggi("dati.txt");
+            record = gs.LeggiRecord();
+            if (record != null) lbl_record.Content = "Record: " + record.ToString();
+            else
+            {
+                lbl_record.Content = "Nessun record";
+                lbl_record.FontSize -= 5;
+            }
             /* AnimazioneMazzetti(btn_ausiliare1);
              AnimazioneMazzetti(btn_ausiliare2);
              AnimazioneMazzetti(btn_ausiliare3);
@@ -99,6 +108,8 @@ namespace ManuelitoWpf
             }
             catch (Exception ex)
             {
+                modalitaSelezioneCarta = true;
+                btnPartenza.Background = Brushes.Transparent;
                 MessageBox.Show(ex.Message);
             }        
         }
@@ -175,8 +186,16 @@ namespace ManuelitoWpf
         }      
         private void Vittoria()
         {
-            if (MessageBox.Show("Vuoi giocare ancora?",
-                    "Vittoria",
+            string testo = $"Complimenti!\nHai vinto in {mosse.ToString()} mosse!\nVuoi giocare ancora?";
+            if(record == null || mosse < record)
+            {
+                GestoreSalvataggi gs = new GestoreSalvataggi("dati.txt");
+                gs.ScriviRecord(mosse);
+                if(record!=null)testo = $"Complimenti!\nHai vinto in {mosse.ToString()} mosse, hai battuto il tuo record di {record} mosse!\nVuoi giocare ancora?";
+                else testo = $"Complimenti!\nHai vinto in {mosse.ToString()} mosse, hai fatto il primo record!\nVuoi giocare ancora?";
+            }
+            if (MessageBox.Show(testo,
+                    "Hai vinto!",
                     MessageBoxButton.YesNo,
                     MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
@@ -189,17 +208,23 @@ namespace ManuelitoWpf
         }
         private void btn_Resa_Click(object sender, RoutedEventArgs e)
         {
-            if (MessageBox.Show("Vuoi giocare ancora?",
+            if (MessageBox.Show("Vuoi arrenderti?",
                     "Sconfitta",
                     MessageBoxButton.YesNo,
                     MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
-                PartitaM p = new PartitaM();
-                p.Owner = this;
-                p.Show();
-                p.Owner = null;
+                if (MessageBox.Show("Vuoi Riprovare?",
+                    "Sconfitta",
+                    MessageBoxButton.YesNo,
+                    MessageBoxImage.Question) == MessageBoxResult.Yes)
+                {
+                    PartitaM p = new PartitaM();
+                    p.Owner = this;
+                    p.Show();
+                    p.Owner = null;
+                }
+                this.Close();
             }
-            this.Close();
         }
         /* private void AnimazioneMazzetti(Button bottone)
          {
@@ -279,7 +304,6 @@ namespace ManuelitoWpf
             };
             pathAnimationStoryboard.Begin(this);
         }
-       
         private void AggiornaImmagini()
         {
             Carta? cartaInCima;
@@ -381,6 +405,7 @@ namespace ManuelitoWpf
             btn_cartaestratta_1.Background = Brushes.Transparent;
             btn_mazzo.Background = Brushes.Transparent;
         }
+
 
     }
 

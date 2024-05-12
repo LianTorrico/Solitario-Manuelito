@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ManuelitoWpf")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8603edf089b2afcbf8acdcc92df16be01f28a02")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f540bd047a7af24726b914cfc9162e2e95785612")]
 [assembly: System.Reflection.AssemblyProductAttribute("ManuelitoWpf")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ManuelitoWpf")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
