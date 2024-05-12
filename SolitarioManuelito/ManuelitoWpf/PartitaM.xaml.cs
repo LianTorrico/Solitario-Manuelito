@@ -40,10 +40,10 @@ namespace ManuelitoWpf
         Mazzetto mazzettoArrivo;
         Button btnArrivo;
 
-        public PartitaM()
+        public PartitaM(string nome)
         {
             InitializeComponent();
-            partitaManuelito = new PartitaManuelito();
+            partitaManuelito = new PartitaManuelito(nome);
             modalitaSelezioneCarta = true;
             this.ResizeMode = ResizeMode.NoResize;
             Height = 760;
@@ -55,7 +55,7 @@ namespace ManuelitoWpf
             AggiornaImmagini();
             BottoniInvisibili();
             mosse = 0;
-            GestoreSalvataggi gs = new GestoreSalvataggi("dati.txt");
+            GestoreSalvataggi gs = new GestoreSalvataggi();
             record = gs.LeggiRecord();
             if (record != null) lbl_record.Content = "Record: " + record.ToString();
             else
@@ -186,11 +186,13 @@ namespace ManuelitoWpf
         }      
         private void Vittoria()
         {
+            GestoreSalvataggi gs = new GestoreSalvataggi();
+            gs.AggiornaLeaderboard(partitaManuelito.Nome, mosse);
             string testo = $"Complimenti!\nHai vinto in {mosse.ToString()} mosse!\nVuoi giocare ancora?";
             if(record == null || mosse < record)
             {
-                GestoreSalvataggi gs = new GestoreSalvataggi("dati.txt");
-                gs.ScriviRecord(mosse);
+                GestoreSalvataggi gss = new GestoreSalvataggi();
+                gss.ScriviRecord(mosse);
                 if(record!=null)testo = $"Complimenti!\nHai vinto in {mosse.ToString()} mosse, hai battuto il tuo record di {record} mosse!\nVuoi giocare ancora?";
                 else testo = $"Complimenti!\nHai vinto in {mosse.ToString()} mosse, hai fatto il primo record!\nVuoi giocare ancora?";
             }
@@ -199,7 +201,7 @@ namespace ManuelitoWpf
                     MessageBoxButton.YesNo,
                     MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
-                PartitaM p = new PartitaM();
+                MenuM p = new MenuM();
                 p.Owner = this;
                 p.Show();
                 p.Owner = null;
@@ -218,7 +220,7 @@ namespace ManuelitoWpf
                     MessageBoxButton.YesNo,
                     MessageBoxImage.Question) == MessageBoxResult.Yes)
                 {
-                    PartitaM p = new PartitaM();
+                    MenuM p = new MenuM();
                     p.Owner = this;
                     p.Show();
                     p.Owner = null;

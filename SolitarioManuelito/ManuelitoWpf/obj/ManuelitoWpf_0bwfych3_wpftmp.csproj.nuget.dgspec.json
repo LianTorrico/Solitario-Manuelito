@@ -1,0 +1,135 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\ManuelitoWpf.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\ManuelitoWpf.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\ManuelitoWpf.csproj",
+        "projectName": "ManuelitoWpf",
+        "projectPath": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\ManuelitoWpf.csproj",
+        "packagesPath": "C:\\Users\\loren\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\ManuelitoWpf\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\loren\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj": {
+                "projectPath": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj",
+        "projectName": "SolitarioClassi",
+        "projectPath": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj",
+        "packagesPath": "C:\\Users\\loren\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\loren\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

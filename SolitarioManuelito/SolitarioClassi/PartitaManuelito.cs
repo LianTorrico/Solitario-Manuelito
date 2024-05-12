@@ -18,11 +18,13 @@ namespace SolitarioClassi
         private Mazzetto[] _posizioniFinali;
         private Mazzetto[] _posizioniAusiliarie;
         private Mazzetto _carteUscite;
+        private string _nome;
         /// <summary>
         /// Crea la partita con mazzo mescolato e le prime 4 carte estratte dal mazzo nelle posizioni ausiliarie
         /// </summary>
-        public PartitaManuelito()
+        public PartitaManuelito(string nome)
         {
+            Nome = nome;
             _mazzo = new Mazzo();
             _mazzo.Mescola();
             _posizioniFinali = new Mazzetto[4];
@@ -37,6 +39,16 @@ namespace SolitarioClassi
                 _posizioniAusiliarie[i].AggiungiCarta(_mazzo.PescaCarta());
             }
             _carteUscite = new Mazzetto(Posizioni.Centrale, 0);
+            _nome = nome;
+        }
+        public string Nome
+        {
+            get { return _nome; }
+            private set
+            {
+                if (String.IsNullOrEmpty(value)) throw new ArgumentException("Il nome è obbligatorio");
+                _nome = value;
+            }
         }
         /// <summary>
         /// Proprietà di get del mazzo

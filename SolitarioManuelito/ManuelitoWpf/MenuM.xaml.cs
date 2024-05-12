@@ -32,23 +32,54 @@ namespace ManuelitoWpf
         }
 
         private void btn_Gioca_Click(object sender, RoutedEventArgs e)
-        {   
-            PartitaM partitaM = new PartitaM();
-            partitaM.Owner = this;
-            partitaM.Show();
-            partitaM.Owner = null;
-            this.Close();
+        {
+            try
+            {
+                PartitaM partitaM = new PartitaM(txb_nome.Text);
+                partitaM.Owner = this;
+                partitaM.Show();
+                partitaM.Owner = null;
+                this.Close();
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
 
         
         private void btn_regole_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start(new ProcessStartInfo
+            try
             {
-                FileName = "https://github.com/LianTorrico/Solitario-Manuelito/blob/main/README.md",
-                UseShellExecute = true
-            });
+                System.Diagnostics.Process.Start(new ProcessStartInfo
+                {
+                    FileName = "https://github.com/LianTorrico/Solitario-Manuelito/blob/main/README.md",
+                    UseShellExecute = true
+                });
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
+        private void btn_Classifica_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Classifica classifica = new Classifica();
+                classifica.Show();
+                classifica.Owner = this;
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
+        }
+
+        private void SvuotaTextBox(object sender, RoutedEventArgs e)
+        {
+            txb_nome.Text = String.Empty;
         }
     }
 }

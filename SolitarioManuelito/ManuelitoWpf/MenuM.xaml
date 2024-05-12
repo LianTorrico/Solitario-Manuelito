@@ -25,5 +25,14 @@
                 </Style>
             </Button.Resources>
         </Button>
+        <Button x:Name="btn_Classifica" Content="Classifica" Margin="62,547,62,107" BorderBrush="{x:Null}" Click="btn_Classifica_Click" Background="#FF27A216" Foreground="White" FontSize="28" >
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBox x:Name="txb_nome" TextWrapping="Wrap" Margin="174,44,22,633" Background="#FF085967" BorderBrush="Black" />
+        <Label x:Name="lbl_inserisciNome" Content="Inserisci nome:" HorizontalAlignment="Left" Height="45" Margin="22,40,0,0" VerticalAlignment="Top" Width="153" FontWeight="Bold" FontSize="18" Foreground="White"/>
     </Grid>
 </Window>

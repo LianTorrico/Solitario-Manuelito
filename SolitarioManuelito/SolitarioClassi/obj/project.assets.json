@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\loren\\OneDrive\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj",
+      "projectUniqueName": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj",
       "projectName": "SolitarioClassi",
-      "projectPath": "C:\\Users\\loren\\OneDrive\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj",
+      "projectPath": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj",
       "packagesPath": "C:\\Users\\loren\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\loren\\OneDrive\\Desktop\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\obj\\",
+      "outputPath": "C:\\Users\\loren\\OneDrive\\Desktop\\School\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\loren\\AppData\\Roaming\\NuGet\\NuGet.Config",
