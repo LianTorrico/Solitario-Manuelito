@@ -244,7 +244,7 @@ namespace ManuelitoWpf
             System.Windows.Controls.Image? im = new System.Windows.Controls.Image();
             NameScope.SetNameScope(this, new NameScope());
             img_animazione.Margin = btnPartenza.Margin;
-            img_animazione.Source = new BitmapImage(new Uri(cartaDaSpostare.Percorso, UriKind.Relative));
+            img_animazione.Source = new BitmapImage(new Uri(pathMazzo + cartaDaSpostare.Percorso + endPathMazzo, UriKind.Relative));
             img_animazione.Visibility = Visibility.Visible;
             //creo matrixTrasform che farà muovere l'immagine e lo metto nell'immagine
             MatrixTransform buttonMatrixTransform = new MatrixTransform();
