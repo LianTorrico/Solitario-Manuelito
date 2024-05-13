@@ -200,3 +200,7 @@ C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito
 C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Release\net6.0-windows\ManuelitoWpf.pdb
 C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Release\net6.0-windows\ManuelitoWpf.genruntimeconfig.cache
 C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Release\net6.0-windows\ref\ManuelitoWpf.dll
+C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\bin\Release\net6.0-windows\ManuelitoWpf.dll.manifest
+C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\bin\Release\net6.0-windows\ManuelitoWpf.application
+C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Release\net6.0-windows\ManuelitoWpf.dll.manifest
+C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Release\net6.0-windows\ManuelitoWpf.application
