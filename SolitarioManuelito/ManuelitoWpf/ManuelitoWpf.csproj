@@ -55,6 +55,222 @@
     <None Remove="images\Carte\9B.jpg" />
     <None Remove="images\Carte\9C.jpg" />
     <None Remove="images\Carte\9D.jpg" />
+    <None Remove="images\carte\Mazzo1\10A.jpg" />
+    <None Remove="images\carte\Mazzo1\10B.jpg" />
+    <None Remove="images\carte\Mazzo1\10C.jpg" />
+    <None Remove="images\carte\Mazzo1\10D.jpg" />
+    <None Remove="images\carte\Mazzo1\1A.jpg" />
+    <None Remove="images\carte\Mazzo1\1B.jpg" />
+    <None Remove="images\carte\Mazzo1\1C.jpg" />
+    <None Remove="images\carte\Mazzo1\1D.jpg" />
+    <None Remove="images\carte\Mazzo1\2A.jpg" />
+    <None Remove="images\carte\Mazzo1\2B.jpg" />
+    <None Remove="images\carte\Mazzo1\2C.jpg" />
+    <None Remove="images\carte\Mazzo1\2D.jpg" />
+    <None Remove="images\carte\Mazzo1\3A.jpg" />
+    <None Remove="images\carte\Mazzo1\3B.jpg" />
+    <None Remove="images\carte\Mazzo1\3C.jpg" />
+    <None Remove="images\carte\Mazzo1\3D.jpg" />
+    <None Remove="images\carte\Mazzo1\4A.jpg" />
+    <None Remove="images\carte\Mazzo1\4B.jpg" />
+    <None Remove="images\carte\Mazzo1\4C.jpg" />
+    <None Remove="images\carte\Mazzo1\4D.jpg" />
+    <None Remove="images\carte\Mazzo1\5A.jpg" />
+    <None Remove="images\carte\Mazzo1\5B.jpg" />
+    <None Remove="images\carte\Mazzo1\5C.jpg" />
+    <None Remove="images\carte\Mazzo1\5D.jpg" />
+    <None Remove="images\carte\Mazzo1\6A.jpg" />
+    <None Remove="images\carte\Mazzo1\6B.jpg" />
+    <None Remove="images\carte\Mazzo1\6C.jpg" />
+    <None Remove="images\carte\Mazzo1\6D.jpg" />
+    <None Remove="images\carte\Mazzo1\7A.jpg" />
+    <None Remove="images\carte\Mazzo1\7B.jpg" />
+    <None Remove="images\carte\Mazzo1\7C.jpg" />
+    <None Remove="images\carte\Mazzo1\7D.jpg" />
+    <None Remove="images\carte\Mazzo1\8A.jpg" />
+    <None Remove="images\carte\Mazzo1\8B.jpg" />
+    <None Remove="images\carte\Mazzo1\8C.jpg" />
+    <None Remove="images\carte\Mazzo1\8D.jpg" />
+    <None Remove="images\carte\Mazzo1\9A.jpg" />
+    <None Remove="images\carte\Mazzo1\9B.jpg" />
+    <None Remove="images\carte\Mazzo1\9C.jpg" />
+    <None Remove="images\carte\Mazzo1\9D.jpg" />
+    <None Remove="images\carte\Mazzo1\RETRO.jpg" />
+    <None Remove="images\carte\mazzo2\10A.png" />
+    <None Remove="images\carte\mazzo2\10B.png" />
+    <None Remove="images\carte\mazzo2\10C.png" />
+    <None Remove="images\carte\mazzo2\10D.png" />
+    <None Remove="images\carte\mazzo2\1A.png" />
+    <None Remove="images\carte\mazzo2\1B.png" />
+    <None Remove="images\carte\mazzo2\1C.png" />
+    <None Remove="images\carte\mazzo2\1D.png" />
+    <None Remove="images\carte\mazzo2\2A.png" />
+    <None Remove="images\carte\mazzo2\2B.png" />
+    <None Remove="images\carte\mazzo2\2C.png" />
+    <None Remove="images\carte\mazzo2\2D.png" />
+    <None Remove="images\carte\mazzo2\3A.png" />
+    <None Remove="images\carte\mazzo2\3B.png" />
+    <None Remove="images\carte\mazzo2\3C.png" />
+    <None Remove="images\carte\mazzo2\3D.png" />
+    <None Remove="images\carte\mazzo2\4A.png" />
+    <None Remove="images\carte\mazzo2\4B.png" />
+    <None Remove="images\carte\mazzo2\4C.png" />
+    <None Remove="images\carte\mazzo2\4D.png" />
+    <None Remove="images\carte\mazzo2\5A.png" />
+    <None Remove="images\carte\mazzo2\5B.png" />
+    <None Remove="images\carte\mazzo2\5C.png" />
+    <None Remove="images\carte\mazzo2\5D.png" />
+    <None Remove="images\carte\mazzo2\6A.png" />
+    <None Remove="images\carte\mazzo2\6B.png" />
+    <None Remove="images\carte\mazzo2\6C.png" />
+    <None Remove="images\carte\mazzo2\6D.png" />
+    <None Remove="images\carte\mazzo2\7A.png" />
+    <None Remove="images\carte\mazzo2\7B.png" />
+    <None Remove="images\carte\mazzo2\7C.png" />
+    <None Remove="images\carte\mazzo2\7D.png" />
+    <None Remove="images\carte\mazzo2\8A.png" />
+    <None Remove="images\carte\mazzo2\8B.png" />
+    <None Remove="images\carte\mazzo2\8C.png" />
+    <None Remove="images\carte\mazzo2\8D.png" />
+    <None Remove="images\carte\mazzo2\9A.png" />
+    <None Remove="images\carte\mazzo2\9B.png" />
+    <None Remove="images\carte\mazzo2\9C.png" />
+    <None Remove="images\carte\mazzo2\9D.png" />
+    <None Remove="images\carte\Mazzo2\A1.png" />
+    <None Remove="images\carte\Mazzo2\A10.png" />
+    <None Remove="images\carte\Mazzo2\A2.png" />
+    <None Remove="images\carte\Mazzo2\A3.png" />
+    <None Remove="images\carte\Mazzo2\A4.png" />
+    <None Remove="images\carte\Mazzo2\A5.png" />
+    <None Remove="images\carte\Mazzo2\A6.png" />
+    <None Remove="images\carte\Mazzo2\A7.png" />
+    <None Remove="images\carte\Mazzo2\A8.png" />
+    <None Remove="images\carte\Mazzo2\A9.png" />
+    <None Remove="images\carte\Mazzo2\B1.png" />
+    <None Remove="images\carte\Mazzo2\B10.png" />
+    <None Remove="images\carte\Mazzo2\B2.png" />
+    <None Remove="images\carte\Mazzo2\B3.png" />
+    <None Remove="images\carte\Mazzo2\B4.png" />
+    <None Remove="images\carte\Mazzo2\B5.png" />
+    <None Remove="images\carte\Mazzo2\B6.png" />
+    <None Remove="images\carte\Mazzo2\B7.png" />
+    <None Remove="images\carte\Mazzo2\B8.png" />
+    <None Remove="images\carte\Mazzo2\B9.png" />
+    <None Remove="images\carte\Mazzo2\C1.png" />
+    <None Remove="images\carte\Mazzo2\C10.png" />
+    <None Remove="images\carte\Mazzo2\C2.png" />
+    <None Remove="images\carte\Mazzo2\C3.png" />
+    <None Remove="images\carte\Mazzo2\C4.png" />
+    <None Remove="images\carte\Mazzo2\C5.png" />
+    <None Remove="images\carte\Mazzo2\C6.png" />
+    <None Remove="images\carte\Mazzo2\C7.png" />
+    <None Remove="images\carte\Mazzo2\C8.png" />
+    <None Remove="images\carte\Mazzo2\C9.png" />
+    <None Remove="images\carte\Mazzo2\D1.png" />
+    <None Remove="images\carte\Mazzo2\D10.png" />
+    <None Remove="images\carte\Mazzo2\D2.png" />
+    <None Remove="images\carte\Mazzo2\D3.png" />
+    <None Remove="images\carte\Mazzo2\D4.png" />
+    <None Remove="images\carte\Mazzo2\D5.png" />
+    <None Remove="images\carte\Mazzo2\D6.png" />
+    <None Remove="images\carte\Mazzo2\D7.png" />
+    <None Remove="images\carte\Mazzo2\D8.png" />
+    <None Remove="images\carte\Mazzo2\D9.png" />
+    <None Remove="images\carte\Mazzo2\RETRO.png" />
+    <None Remove="images\carte\mazzo3\10A.jpg" />
+    <None Remove="images\carte\Mazzo3\10A.png" />
+    <None Remove="images\carte\mazzo3\10B.jpg" />
+    <None Remove="images\carte\Mazzo3\10B.png" />
+    <None Remove="images\carte\mazzo3\10C.jpg" />
+    <None Remove="images\carte\Mazzo3\10C.png" />
+    <None Remove="images\carte\mazzo3\10D.jpg" />
+    <None Remove="images\carte\Mazzo3\10D.png" />
+    <None Remove="images\carte\Mazzo3\1A.jpg" />
+    <None Remove="images\carte\Mazzo3\1B.jpg" />
+    <None Remove="images\carte\Mazzo3\1C.jpg" />
+    <None Remove="images\carte\Mazzo3\1D.jpg" />
+    <None Remove="images\carte\Mazzo3\2A.jpg" />
+    <None Remove="images\carte\Mazzo3\2B.jpg" />
+    <None Remove="images\carte\Mazzo3\2C.jpg" />
+    <None Remove="images\carte\Mazzo3\2D.jpg" />
+    <None Remove="images\carte\Mazzo3\3A.jpg" />
+    <None Remove="images\carte\Mazzo3\3B.jpg" />
+    <None Remove="images\carte\Mazzo3\3C.jpg" />
+    <None Remove="images\carte\Mazzo3\3D.jpg" />
+    <None Remove="images\carte\Mazzo3\4A.jpg" />
+    <None Remove="images\carte\Mazzo3\4B.jpg" />
+    <None Remove="images\carte\Mazzo3\4C.jpg" />
+    <None Remove="images\carte\Mazzo3\4D.jpg" />
+    <None Remove="images\carte\Mazzo3\5A.jpg" />
+    <None Remove="images\carte\Mazzo3\5B.jpg" />
+    <None Remove="images\carte\Mazzo3\5C.jpg" />
+    <None Remove="images\carte\Mazzo3\5D.jpg" />
+    <None Remove="images\carte\Mazzo3\6A.jpg" />
+    <None Remove="images\carte\Mazzo3\6B.jpg" />
+    <None Remove="images\carte\Mazzo3\6C.jpg" />
+    <None Remove="images\carte\Mazzo3\6D.jpg" />
+    <None Remove="images\carte\Mazzo3\7A.jpg" />
+    <None Remove="images\carte\Mazzo3\7B.jpg" />
+    <None Remove="images\carte\Mazzo3\7C.jpg" />
+    <None Remove="images\carte\Mazzo3\7D.jpg" />
+    <None Remove="images\carte\mazzo3\8A.jpg" />
+    <None Remove="images\carte\Mazzo3\8A.png" />
+    <None Remove="images\carte\mazzo3\8B.jpg" />
+    <None Remove="images\carte\Mazzo3\8B.png" />
+    <None Remove="images\carte\mazzo3\8C.jpg" />
+    <None Remove="images\carte\Mazzo3\8C.png" />
+    <None Remove="images\carte\mazzo3\8D.jpg" />
+    <None Remove="images\carte\Mazzo3\8D.png" />
+    <None Remove="images\carte\mazzo3\9A.jpg" />
+    <None Remove="images\carte\Mazzo3\9A.png" />
+    <None Remove="images\carte\mazzo3\9B.jpg" />
+    <None Remove="images\carte\Mazzo3\9B.png" />
+    <None Remove="images\carte\mazzo3\9C.jpg" />
+    <None Remove="images\carte\Mazzo3\9C.png" />
+    <None Remove="images\carte\mazzo3\9D.jpg" />
+    <None Remove="images\carte\Mazzo3\9D.png" />
+    <None Remove="images\carte\Mazzo3\Retro.jpg" />
+    <None Remove="images\carte\mazzo4\10A.png" />
+    <None Remove="images\carte\mazzo4\10B.png" />
+    <None Remove="images\carte\mazzo4\10C.png" />
+    <None Remove="images\carte\mazzo4\10D.png" />
+    <None Remove="images\carte\mazzo4\1A.png" />
+    <None Remove="images\carte\mazzo4\1B.png" />
+    <None Remove="images\carte\mazzo4\1C.png" />
+    <None Remove="images\carte\mazzo4\1D.png" />
+    <None Remove="images\carte\mazzo4\2A.png" />
+    <None Remove="images\carte\mazzo4\2B.png" />
+    <None Remove="images\carte\mazzo4\2C.png" />
+    <None Remove="images\carte\mazzo4\2D.png" />
+    <None Remove="images\carte\mazzo4\3A.png" />
+    <None Remove="images\carte\mazzo4\3B.png" />
+    <None Remove="images\carte\mazzo4\3C.png" />
+    <None Remove="images\carte\mazzo4\3D.png" />
+    <None Remove="images\carte\mazzo4\4A.png" />
+    <None Remove="images\carte\mazzo4\4B.png" />
+    <None Remove="images\carte\mazzo4\4C.png" />
+    <None Remove="images\carte\mazzo4\4D.png" />
+    <None Remove="images\carte\mazzo4\5A.png" />
+    <None Remove="images\carte\mazzo4\5B.png" />
+    <None Remove="images\carte\mazzo4\5C.png" />
+    <None Remove="images\carte\mazzo4\5D.png" />
+    <None Remove="images\carte\mazzo4\6A.png" />
+    <None Remove="images\carte\mazzo4\6B.png" />
+    <None Remove="images\carte\mazzo4\6C.png" />
+    <None Remove="images\carte\mazzo4\6D.png" />
+    <None Remove="images\carte\mazzo4\7A.png" />
+    <None Remove="images\carte\mazzo4\7B.png" />
+    <None Remove="images\carte\mazzo4\7C.png" />
+    <None Remove="images\carte\mazzo4\7D.png" />
+    <None Remove="images\carte\mazzo4\8A.png" />
+    <None Remove="images\carte\mazzo4\8B.png" />
+    <None Remove="images\carte\mazzo4\8C.png" />
+    <None Remove="images\carte\mazzo4\8D.png" />
+    <None Remove="images\carte\mazzo4\9A.png" />
+    <None Remove="images\carte\mazzo4\9B.png" />
+    <None Remove="images\carte\mazzo4\9C.png" />
+    <None Remove="images\carte\mazzo4\9D.png" />
+    <None Remove="images\carte\mazzo4\RETRO.png" />
     <None Remove="images\Carte\RETRO.jpg" />
     <None Remove="images\classifica.png" />
     <None Remove="images\menu.png" />
@@ -66,127 +282,496 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="images\Carte\10A.jpg">
+    <Content Include="images\carte\Mazzo1\10A.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\10B.jpg">
+    <Content Include="images\carte\Mazzo1\10B.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\10C.jpg">
+    <Content Include="images\carte\Mazzo1\10C.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\10D.jpg">
+    <Content Include="images\carte\Mazzo1\10D.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\1A.jpg">
+    <Content Include="images\carte\Mazzo1\1A.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\1B.jpg">
+    <Content Include="images\carte\Mazzo1\1B.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\1C.jpg">
+    <Content Include="images\carte\Mazzo1\1C.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\1D.jpg">
+    <Content Include="images\carte\Mazzo1\1D.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\2A.jpg">
+    <Content Include="images\carte\Mazzo1\2A.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\2B.jpg">
+    <Content Include="images\carte\Mazzo1\2B.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\2C.jpg">
+    <Content Include="images\carte\Mazzo1\2C.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\2D.jpg">
+    <Content Include="images\carte\Mazzo1\2D.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\3A.jpg">
+    <Content Include="images\carte\Mazzo1\3A.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\3B.jpg">
+    <Content Include="images\carte\Mazzo1\3B.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\3C.jpg">
+    <Content Include="images\carte\Mazzo1\3C.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\3D.jpg">
+    <Content Include="images\carte\Mazzo1\3D.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\4A.jpg">
+    <Content Include="images\carte\Mazzo1\4A.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\4B.jpg">
+    <Content Include="images\carte\Mazzo1\4B.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\4C.jpg">
+    <Content Include="images\carte\Mazzo1\4C.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\4D.jpg">
+    <Content Include="images\carte\Mazzo1\4D.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\5A.jpg">
+    <Content Include="images\carte\Mazzo1\5A.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\5B.jpg">
+    <Content Include="images\carte\Mazzo1\5B.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\5C.jpg">
+    <Content Include="images\carte\Mazzo1\5C.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\5D.jpg">
+    <Content Include="images\carte\Mazzo1\5D.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\6A.jpg">
+    <Content Include="images\carte\Mazzo1\6A.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\6B.jpg">
+    <Content Include="images\carte\Mazzo1\6B.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\6C.jpg">
+    <Content Include="images\carte\Mazzo1\6C.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\6D.jpg">
+    <Content Include="images\carte\Mazzo1\6D.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\7A.jpg">
+    <Content Include="images\carte\Mazzo1\7A.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\7B.jpg">
+    <Content Include="images\carte\Mazzo1\7B.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\7C.jpg">
+    <Content Include="images\carte\Mazzo1\7C.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\7D.jpg">
+    <Content Include="images\carte\Mazzo1\7D.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\8A.jpg">
+    <Content Include="images\carte\Mazzo1\8A.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\8B.jpg">
+    <Content Include="images\carte\Mazzo1\8B.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\8C.jpg">
+    <Content Include="images\carte\Mazzo1\8C.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\8D.jpg">
+    <Content Include="images\carte\Mazzo1\8D.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\9A.jpg">
+    <Content Include="images\carte\Mazzo1\9A.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\9B.jpg">
+    <Content Include="images\carte\Mazzo1\9B.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\9C.jpg">
+    <Content Include="images\carte\Mazzo1\9C.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\9D.jpg">
+    <Content Include="images\carte\Mazzo1\9D.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="images\Carte\RETRO.jpg">
+    <Content Include="images\carte\Mazzo1\RETRO.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\10A.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\10B.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\10C.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\10D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\1A.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\1B.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\1C.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\1D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\2A.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\2B.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\2C.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\2D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\3A.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\3B.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\3C.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\3D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\4A.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\4B.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\4C.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\4D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\5A.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\5B.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\5C.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\5D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\6A.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\6B.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\6C.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\6D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\7A.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\7B.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\7C.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\7D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\8A.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\8B.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\8C.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\8D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\9A.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\9B.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\9C.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo2\9D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo2\RETRO.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo3\10A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo3\10B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo3\10C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo3\10D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\1A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\1B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\1C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\1D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\2A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\2B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\2C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\2D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\3A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\3B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\3C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\3D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\4A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\4B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\4C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\4D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\5A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\5B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\5C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\5D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\6A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\6B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\6C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\6D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\7A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\7B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\7C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\7D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo3\8A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo3\8B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo3\8C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo3\8D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo3\9A.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo3\9B.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo3\9C.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo3\9D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo3\Retro.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\10A.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\10B.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\10C.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\10D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\1A.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\1B.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\1C.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\1D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\2A.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\2B.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\2C.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\2D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\3A.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\3B.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\3C.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\3D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\4A.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\4B.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\4C.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\4D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\5A.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\5B.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\5C.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\5D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\6A.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\6B.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\6C.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\6D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\7A.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\7B.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\7C.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\7D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\8A.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\8B.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\8C.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\8D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\9A.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\9B.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\9C.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\9D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\mazzo4\RETRO.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="images\classifica.png">

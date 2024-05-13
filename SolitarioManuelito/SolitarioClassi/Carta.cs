@@ -39,7 +39,7 @@ namespace SolitarioClassi
         }
         private void InizializzaPercorso()
         {
-            _percorso = "images/carte/" + (int)Valore + Seme.ToString() + ".jpg";
+            _percorso = (int)Valore + Seme.ToString();
         }
         public string Percorso
         {

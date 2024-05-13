@@ -33,6 +33,8 @@ namespace ManuelitoWpf
         Button[] bottoniAusiliari;
         int mosse;
         int? record;
+        string pathMazzo;
+        string endPathMazzo;
 
         Carta? cartaDaSpostare;
 
@@ -41,9 +43,11 @@ namespace ManuelitoWpf
         Mazzetto mazzettoArrivo;
         Button btnArrivo;
 
-        public PartitaM(string nome)
+        public PartitaM(string nome, string path, string endPath)
         {
             InitializeComponent();
+            pathMazzo = path;
+            endPathMazzo = endPath;
             partitaManuelito = new PartitaManuelito(nome);
             modalitaSelezioneCarta = true;
             this.ResizeMode = ResizeMode.NoResize;
@@ -197,7 +201,7 @@ namespace ManuelitoWpf
                         MessageBoxButton.YesNo,
                         MessageBoxImage.Question) == MessageBoxResult.Yes)
                 {
-                    MenuM p = new MenuM(partitaManuelito.Nome);
+                    MenuM p = new MenuM(partitaManuelito.Nome,pathMazzo,endPathMazzo);
                     p.Owner = this;
                     p.Show();
                     p.Owner = null;
@@ -223,7 +227,7 @@ namespace ManuelitoWpf
                         MessageBoxButton.YesNo,
                         MessageBoxImage.Question) == MessageBoxResult.Yes)
                     {
-                        MenuM p = new MenuM(partitaManuelito.Nome);
+                        MenuM p = new MenuM(partitaManuelito.Nome, pathMazzo, endPathMazzo);
                         p.Owner = this;
                         p.Show();
                         p.Owner = null;
@@ -307,7 +311,7 @@ namespace ManuelitoWpf
                 {
                     bottoniAusiliari[i].IsHitTestVisible = true;
                     Immagine.Visibility = Visibility.Visible;
-                    Immagine.Source = new BitmapImage(new Uri(cartaInCima.Percorso, UriKind.Relative));
+                    Immagine.Source = new BitmapImage(new Uri(pathMazzo + cartaInCima.Percorso + endPathMazzo, UriKind.Relative));
                 }
                 //btn finale
                 Immagine = ((System.Windows.Controls.Image)(bottoniFinali[i].Content));
@@ -321,7 +325,7 @@ namespace ManuelitoWpf
                 {
                     bottoniFinali[i].IsHitTestVisible = true;
                     Immagine.Visibility = Visibility.Visible;
-                    Immagine.Source = new BitmapImage(new Uri(cartaInCima.Percorso, UriKind.Relative));
+                    Immagine.Source = new BitmapImage(new Uri(pathMazzo + cartaInCima.Percorso + endPathMazzo, UriKind.Relative));
                 }
             }
             //mazzo
@@ -332,8 +336,8 @@ namespace ManuelitoWpf
             else
             {
                 img_mazzo.Visibility = Visibility.Visible;
-                string nomeImg = "/images/Carte/RETRO.jpg";
-                var uriSource = new Uri(nomeImg, UriKind.Relative);
+                string nomeImg = "RETRO";
+                var uriSource = new Uri(pathMazzo + nomeImg + endPathMazzo, UriKind.Relative);
                 img_mazzo.Source = new BitmapImage(uriSource);
             }
             //centrali
@@ -352,7 +356,7 @@ namespace ManuelitoWpf
                 {
                     if (i == 0) btn_cartaestratta_1.IsHitTestVisible = true;
                     Immagine.Visibility = Visibility.Visible;
-                    Immagine.Source = new BitmapImage(new Uri(cartaInCima.Percorso, UriKind.Relative));
+                    Immagine.Source = new BitmapImage(new Uri(pathMazzo + cartaInCima.Percorso + endPathMazzo, UriKind.Relative));
                 }
             }
         }

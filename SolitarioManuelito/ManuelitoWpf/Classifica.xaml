@@ -16,6 +16,6 @@
             <ImageBrush ImageSource="images/classifica.png" Stretch="UniformToFill"></ImageBrush>
         </Grid.Background>
         <ListBox x:Name="lst_classifica" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="12,123,-12,22" Background="Transparent" Grid.ColumnSpan="2" BorderBrush="#00ABADB3" Foreground="White" FontWeight="Bold" FontSize="20" FontFamily="Verdana"/>
-        <Label Content="Classifica" HorizontalAlignment="Left" Height="63" Margin="0,28,0,0" VerticalAlignment="Top" Width="350" Foreground="White" FontSize="48" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" FontFamily="Verdana"/>
+        <Label x:Name="lbl_classifica" Content="Classifica" HorizontalAlignment="Left" Height="63" Margin="0,28,0,0" VerticalAlignment="Top" Width="350" Foreground="White" FontSize="48" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" FontFamily="Verdana"/>
     </Grid>
 </Window>

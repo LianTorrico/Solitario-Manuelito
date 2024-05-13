@@ -34,5 +34,12 @@
         </Button>
         <TextBox x:Name="txb_nome" TextWrapping="Wrap" Margin="174,44,22,633" Background="#FF085967" BorderBrush="Black" Foreground="White" FontSize="18" FontWeight="Bold" GotFocus="SvuotaTextBox" />
         <Label x:Name="lbl_inserisciNome" Content="Inserisci nome:" HorizontalAlignment="Left" Height="45" Margin="22,40,0,0" VerticalAlignment="Top" Width="153" FontWeight="Bold" FontSize="18" Foreground="White"/>
+        <Button x:Name="btn_Impostazioni" Content="Impostazioni" Margin="62,625,62,29" BorderBrush="{x:Null}" Click="btn_Impostazioni_Click" Background="#FF27A216" Foreground="White" FontSize="28" >
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
     </Grid>
 </Window>

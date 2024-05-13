@@ -22,6 +22,8 @@ namespace ManuelitoWpf
     /// </summary>
     public partial class MenuM : Window
     {
+        string pathMazzo;
+        string endMazzo;
         public MenuM()
         {
             InitializeComponent();
@@ -29,17 +31,26 @@ namespace ManuelitoWpf
             this.Width = 380;
             this.Height = 760;
             WindowStartupLocation = WindowStartupLocation.CenterOwner;
+            pathMazzo = "images/carte/mazzo1/";
+            endMazzo = ".jpg";
         }
-        public MenuM(string nome):this()
+        public MenuM(string nome, string oldPathMazzo, string oldEndMazzo):this()
         {
             txb_nome.Text = nome;
+            pathMazzo = oldPathMazzo;
+            endMazzo = oldEndMazzo;
+        }
+        public void AggiornaPath(string newPath,string newEndMazzo)
+        {
+            pathMazzo = newPath;
+            endMazzo = newEndMazzo;
         }
 
         private void btn_Gioca_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                PartitaM partitaM = new PartitaM(txb_nome.Text);
+                PartitaM partitaM = new PartitaM(txb_nome.Text,pathMazzo,endMazzo);
                 partitaM.Owner = this;
                 partitaM.Show();
                 partitaM.Owner = null;
@@ -84,6 +95,19 @@ namespace ManuelitoWpf
         private void SvuotaTextBox(object sender, RoutedEventArgs e)
         {
             txb_nome.Text = String.Empty;
+        }
+        private void btn_Impostazioni_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Impostazioni impostazioni = new Impostazioni(pathMazzo);
+                impostazioni.Show();
+                impostazioni.Owner = this;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

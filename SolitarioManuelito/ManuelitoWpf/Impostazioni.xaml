@@ -1,0 +1,53 @@
+﻿<Window x:Class="ManuelitoWpf.Impostazioni"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ManuelitoWpf"
+        mc:Ignorable="d"
+        Title="Impostazioni" Height="730" Width="350">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="images/classifica.png" Stretch="UniformToFill"></ImageBrush>
+        </Grid.Background>
+        <Button x:Name="btn_mazzo2" Margin="207,98,61,482" Click="ClickCarta" BorderBrush="#00000000">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="11"></Setter>
+                </Style>
+            </Button.Resources>
+            <Image x:Name="img_mazzo2" Height="128" Width="81"/>
+        </Button>
+        <Button x:Name="btn_mazzo1" Margin="57,98,211,482" Click="ClickCarta" BorderBrush="#00000000">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="11"></Setter>
+                </Style>
+            </Button.Resources>
+            <Image x:Name="img_mazzo1" Height="128" Width="81"/>
+        </Button>
+        <Label x:Name="lbl_scegliMazzo" Content="Tipo mazzo:" HorizontalAlignment="Left" Height="50" Margin="30,38,0,0" VerticalAlignment="Top" Width="266" FontFamily="Verdana" Foreground="White" FontSize="24" RenderTransformOrigin="0.632,0.481" HorizontalContentAlignment="Center"/>
+        <Button x:Name="btn_mazzo3" Margin="57,277,211,303" Click="ClickCarta" BorderBrush="#00000000">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="11"/>
+                </Style>
+            </Button.Resources>
+            <Image x:Name="img_mazzo3" Height="128" Width="81"/>
+        </Button>
+        <Button x:Name="btn_mazzo4" Margin="207,277,61,303" Click="ClickCarta" BorderBrush="#00000000">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="11"/>
+                </Style>
+            </Button.Resources>
+            <Image x:Name="img_mazzo4" Height="128" Width="81"/>
+        </Button>
+    </Grid>
+</Window>
