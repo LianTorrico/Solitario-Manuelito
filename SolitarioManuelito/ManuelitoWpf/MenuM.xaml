@@ -32,7 +32,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <TextBox x:Name="txb_nome" TextWrapping="Wrap" Margin="174,44,22,633" Background="#FF085967" BorderBrush="Black" />
+        <TextBox x:Name="txb_nome" TextWrapping="Wrap" Margin="174,44,22,633" Background="#FF085967" BorderBrush="Black" Foreground="White" FontSize="18" FontWeight="Bold" GotFocus="SvuotaTextBox" />
         <Label x:Name="lbl_inserisciNome" Content="Inserisci nome:" HorizontalAlignment="Left" Height="45" Margin="22,40,0,0" VerticalAlignment="Top" Width="153" FontWeight="Bold" FontSize="18" Foreground="White"/>
     </Grid>
 </Window>

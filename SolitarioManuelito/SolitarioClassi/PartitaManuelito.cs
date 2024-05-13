@@ -47,6 +47,7 @@ namespace SolitarioClassi
             private set
             {
                 if (String.IsNullOrEmpty(value)) throw new ArgumentException("Il nome è obbligatorio");
+                if (value.Length > 12) throw new ArgumentException("nome lungo massimo 12 caratteri");
                 _nome = value;
             }
         }

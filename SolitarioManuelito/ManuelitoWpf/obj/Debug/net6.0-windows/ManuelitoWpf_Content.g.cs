@@ -49,6 +49,7 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/9c.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/9d.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/retro.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/classifica.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/menu.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/partita.png")]
 

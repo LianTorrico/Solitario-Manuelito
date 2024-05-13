@@ -8,29 +8,32 @@ namespace SolitarioClassi
 {
     public class GestoreSalvataggi
     {
-        private string _recordPath;
         private string _leaderboardPath;
         public GestoreSalvataggi()
         {
-            _recordPath = "record.txt";
             _leaderboardPath = "leaderboard.txt";
         }
         public int? LeggiRecord()
         {
             string line;
-            using (StreamReader sr = new StreamReader(_recordPath))
+            using (StreamReader sr = new StreamReader(_leaderboardPath))
             {
                 line= sr.ReadLine();
             }
-            if (line == "null") return null; 
-            return Convert.ToInt32(line);
+            if (line == "null") return null;
+            string[] lineaSpezzata = line.Split(' ');
+            return Convert.ToInt32(lineaSpezzata[0]);
         }
-        public void ScriviRecord(int record)
+        public string? LeggiNomeRecord()
         {
-            using (StreamWriter sw = new StreamWriter(_recordPath))
+            string line;
+            using (StreamReader sr = new StreamReader(_leaderboardPath))
             {
-                sw.WriteLine(record.ToString());
+                line = sr.ReadLine();
             }
+            if (line == "null") return null;
+            string[] lineaSpezzata = line.Split(' ');
+            return lineaSpezzata[1];
         }
         public void AggiornaLeaderboard(string nome, int punteggio)
         {

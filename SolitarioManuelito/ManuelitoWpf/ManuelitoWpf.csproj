@@ -56,6 +56,7 @@
     <None Remove="images\Carte\9C.jpg" />
     <None Remove="images\Carte\9D.jpg" />
     <None Remove="images\Carte\RETRO.jpg" />
+    <None Remove="images\classifica.png" />
     <None Remove="images\menu.png" />
     <None Remove="images\Partita.png" />
     <None Remove="images\Perdita.png" />
@@ -186,6 +187,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="images\Carte\RETRO.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\classifica.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="images\menu.png">

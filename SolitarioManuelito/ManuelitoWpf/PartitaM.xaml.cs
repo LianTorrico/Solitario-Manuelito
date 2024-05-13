@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -63,15 +64,6 @@ namespace ManuelitoWpf
                 lbl_record.Content = "Nessun record";
                 lbl_record.FontSize -= 5;
             }
-            /* AnimazioneMazzetti(btn_ausiliare1);
-             AnimazioneMazzetti(btn_ausiliare2);
-             AnimazioneMazzetti(btn_ausiliare3);
-             AnimazioneMazzetti(btn_ausiliare4);
-             AnimazioneMazzetti(btn_finale1);
-             AnimazioneMazzetti(btn_finale2);
-             AnimazioneMazzetti(btn_finale3);
-             AnimazioneMazzetti(btn_finale4);
-             AnimazioneMazzetti(btn_cartaestratta_1);*/
         }
         
         private void ClickCarta(object sender, RoutedEventArgs e)
@@ -109,7 +101,7 @@ namespace ManuelitoWpf
             catch (Exception ex)
             {
                 modalitaSelezioneCarta = true;
-                btnPartenza.Background = Brushes.Transparent;
+                if(btnPartenza!=null)btnPartenza.Background = Brushes.Transparent;
                 MessageBox.Show(ex.Message);
             }        
         }
@@ -186,72 +178,60 @@ namespace ManuelitoWpf
         }      
         private void Vittoria()
         {
-            GestoreSalvataggi gs = new GestoreSalvataggi();
-            gs.AggiornaLeaderboard(partitaManuelito.Nome, mosse);
-            string testo = $"Complimenti!\nHai vinto in {mosse.ToString()} mosse!\nVuoi giocare ancora?";
-            if(record == null || mosse < record)
+            try
             {
-                GestoreSalvataggi gss = new GestoreSalvataggi();
-                gss.ScriviRecord(mosse);
-                if(record!=null)testo = $"Complimenti!\nHai vinto in {mosse.ToString()} mosse, hai battuto il tuo record di {record} mosse!\nVuoi giocare ancora?";
-                else testo = $"Complimenti!\nHai vinto in {mosse.ToString()} mosse, hai fatto il primo record!\nVuoi giocare ancora?";
-            }
-            if (MessageBox.Show(testo,
-                    "Hai vinto!",
-                    MessageBoxButton.YesNo,
-                    MessageBoxImage.Question) == MessageBoxResult.Yes)
-            {
-                MenuM p = new MenuM();
-                p.Owner = this;
-                p.Show();
-                p.Owner = null;
-            }
-            this.Close();
-        }
-        private void btn_Resa_Click(object sender, RoutedEventArgs e)
-        {
-            if (MessageBox.Show("Vuoi arrenderti?",
-                    "Sconfitta",
-                    MessageBoxButton.YesNo,
-                    MessageBoxImage.Question) == MessageBoxResult.Yes)
-            {
-                if (MessageBox.Show("Vuoi Riprovare?",
-                    "Sconfitta",
-                    MessageBoxButton.YesNo,
-                    MessageBoxImage.Question) == MessageBoxResult.Yes)
+                GestoreSalvataggi gs = new GestoreSalvataggi();
+                gs.AggiornaLeaderboard(partitaManuelito.Nome, mosse);
+                string testo = $"Complimenti!\nHai vinto in {mosse.ToString()} mosse!\nVuoi giocare ancora?";
+                if (record == null || mosse < record)
                 {
-                    MenuM p = new MenuM();
+                    string nomeRecord = gs.LeggiNomeRecord();
+                    if (record != null) testo = $"Complimenti!\nHai vinto in {mosse.ToString()} mosse, hai battuto il record di {record} mosse di {nomeRecord}!\nVuoi giocare ancora?";
+                    else testo = $"Complimenti!\nHai vinto in {mosse.ToString()} mosse, hai fatto il primo record!\nVuoi giocare ancora?";
+                }
+                if (MessageBox.Show(testo,
+                        "Hai vinto!",
+                        MessageBoxButton.YesNo,
+                        MessageBoxImage.Question) == MessageBoxResult.Yes)
+                {
+                    MenuM p = new MenuM(partitaManuelito.Nome);
                     p.Owner = this;
                     p.Show();
                     p.Owner = null;
                 }
                 this.Close();
+            }catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
+            
         }
-        /* private void AnimazioneMazzetti(Button bottone)
-         {
-             System.Windows.Controls.Image immagine = bottone.Content as System.Windows.Controls.Image;
-             this.RegisterName(
-                 immagine.Name, immagine);
-
-             DoubleAnimation myDoubleAnimation = new DoubleAnimation();
-             myDoubleAnimation.To = 300;
-             myDoubleAnimation.Duration =
-                 new Duration(TimeSpan.FromSeconds(2));
-
-             Storyboard.SetTargetName(myDoubleAnimation, immagine.Name);
-             Storyboard.SetTargetProperty(myDoubleAnimation,
-                 new PropertyPath(immagine.WidthProperty));
-             Storyboard myStoryboard = new Storyboard();
-             myStoryboard.Children.Add(myDoubleAnimation);
-
-             // Use an anonymous event handler to begin the animation
-             // when the rectangle is clicked.
-             myRectangle.MouseLeftButtonDown += delegate (object sender, MouseButtonEventArgs args)
-             {
-                 myStoryboard.Begin(myRectangle);
-             };
-         }*/
+        private void btn_Resa_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (MessageBox.Show("Vuoi arrenderti?",
+                    "Sconfitta",
+                    MessageBoxButton.YesNo,
+                    MessageBoxImage.Question) == MessageBoxResult.Yes)
+                {
+                    if (MessageBox.Show("Vuoi Riprovare?",
+                        "Sconfitta",
+                        MessageBoxButton.YesNo,
+                        MessageBoxImage.Question) == MessageBoxResult.Yes)
+                    {
+                        MenuM p = new MenuM(partitaManuelito.Nome);
+                        p.Owner = this;
+                        p.Show();
+                        p.Owner = null;
+                    }
+                    this.Close();
+                }
+            }catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }         
+        }
         private void AnimazioneEAggiornamentoImmagini()
         {
             System.Windows.Controls.Image? im = new System.Windows.Controls.Image();

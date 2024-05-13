@@ -30,6 +30,10 @@ namespace ManuelitoWpf
             this.Height = 760;
             WindowStartupLocation = WindowStartupLocation.CenterOwner;
         }
+        public MenuM(string nome):this()
+        {
+            txb_nome.Text = nome;
+        }
 
         private void btn_Gioca_Click(object sender, RoutedEventArgs e)
         {
