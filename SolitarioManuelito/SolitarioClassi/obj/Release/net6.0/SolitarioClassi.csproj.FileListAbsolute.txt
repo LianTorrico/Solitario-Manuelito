@@ -1,0 +1,12 @@
+C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\SolitarioClassi\bin\Release\net6.0\SolitarioClassi.deps.json
+C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\SolitarioClassi\bin\Release\net6.0\SolitarioClassi.dll
+C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\SolitarioClassi\bin\Release\net6.0\SolitarioClassi.pdb
+C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\SolitarioClassi\obj\Release\net6.0\SolitarioClassi.csproj.AssemblyReference.cache
+C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\SolitarioClassi\obj\Release\net6.0\SolitarioClassi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\SolitarioClassi\obj\Release\net6.0\SolitarioClassi.AssemblyInfoInputs.cache
+C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\SolitarioClassi\obj\Release\net6.0\SolitarioClassi.AssemblyInfo.cs
+C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\SolitarioClassi\obj\Release\net6.0\SolitarioClassi.csproj.CoreCompileInputs.cache
+C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\SolitarioClassi\obj\Release\net6.0\SolitarioClassi.dll
+C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\SolitarioClassi\obj\Release\net6.0\refint\SolitarioClassi.dll
+C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\SolitarioClassi\obj\Release\net6.0\SolitarioClassi.pdb
+C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\SolitarioClassi\obj\Release\net6.0\ref\SolitarioClassi.dll
