@@ -20,7 +20,7 @@ namespace SolitarioClassi
             {
                 line= sr.ReadLine();
             }
-            if (line == "null") return null;
+            if (line == null) return null;
             string[] lineaSpezzata = line.Split(' ');
             return Convert.ToInt32(lineaSpezzata[0]);
         }

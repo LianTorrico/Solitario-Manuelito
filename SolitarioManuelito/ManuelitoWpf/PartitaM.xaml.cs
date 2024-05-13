@@ -64,6 +64,7 @@ namespace ManuelitoWpf
                 lbl_record.Content = "Nessun record";
                 lbl_record.FontSize -= 5;
             }
+            lbl_nome.Content = partitaManuelito.Nome;
         }
         
         private void ClickCarta(object sender, RoutedEventArgs e)
@@ -76,6 +77,7 @@ namespace ManuelitoWpf
                     btnPartenza = (Button)sender;
                     modalitaSelezioneCarta = false;
                     btnPartenza.Background = Brushes.Cyan;
+                    AttivaBottoni();
                 }
                 else
                 {
@@ -83,6 +85,7 @@ namespace ManuelitoWpf
                     {
                         modalitaSelezioneCarta = true;
                         btnPartenza.Background = Brushes.Transparent;
+                        AggiornaImmagini();
                     }
                     else
                     {
@@ -280,9 +283,9 @@ namespace ManuelitoWpf
             pathAnimationStoryboard.Completed += (o, s) => {
                 img_animazione.Visibility = Visibility.Collapsed;
                 im.Visibility = Visibility.Collapsed;
+                AttivaBottoni();
                 AggiornaImmagini();
                 cartaDaSpostare = null;
-                AttivaBottoni();
             };
             pathAnimationStoryboard.Begin(this);
         }
@@ -298,9 +301,11 @@ namespace ManuelitoWpf
                 if(cartaInCima == null)
                 {
                     Immagine.Visibility = Visibility.Collapsed;
+                    bottoniAusiliari[i].IsHitTestVisible = false;
                 }
                 else
                 {
+                    bottoniAusiliari[i].IsHitTestVisible = true;
                     Immagine.Visibility = Visibility.Visible;
                     Immagine.Source = new BitmapImage(new Uri(cartaInCima.Percorso, UriKind.Relative));
                 }
@@ -309,10 +314,12 @@ namespace ManuelitoWpf
                 cartaInCima = partitaManuelito.GuardaCartaPosizione(Posizioni.Finali, i);
                 if (cartaInCima == null)
                 {
+                    bottoniFinali[i].IsHitTestVisible = false;
                     Immagine.Visibility = Visibility.Collapsed;
                 }
                 else
                 {
+                    bottoniFinali[i].IsHitTestVisible = true;
                     Immagine.Visibility = Visibility.Visible;
                     Immagine.Source = new BitmapImage(new Uri(cartaInCima.Percorso, UriKind.Relative));
                 }
@@ -338,10 +345,12 @@ namespace ManuelitoWpf
                 if (i == 2) Immagine = img_cartaEstratta3;
                 if (cartaInCima == null)
                 {
+                    if(i==0)btn_cartaestratta_1.IsHitTestVisible = false;
                     Immagine.Visibility = Visibility.Collapsed;
                 }
                 else
                 {
+                    if (i == 0) btn_cartaestratta_1.IsHitTestVisible = true;
                     Immagine.Visibility = Visibility.Visible;
                     Immagine.Source = new BitmapImage(new Uri(cartaInCima.Percorso, UriKind.Relative));
                 }

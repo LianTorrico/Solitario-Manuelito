@@ -39,6 +39,10 @@ namespace ManuelitoWpf
             {
                 lista.Add("#"+rank.ToString()+" " +punteggio.Item2 + " - mosse: " + punteggio.Item1.ToString());
                 rank++;
+            }        
+            if(lista.Count == 0) 
+            {
+                lista.Add("Nesssuna partita fatta");   
             }
             lst_classifica.ItemsSource = null;
             lst_classifica.ItemsSource = lista;
