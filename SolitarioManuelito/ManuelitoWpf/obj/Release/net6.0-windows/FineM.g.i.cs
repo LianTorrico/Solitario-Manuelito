@@ -53,7 +53,7 @@ namespace ManuelitoWpf {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ManuelitoWpf;component/finem.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ManuelitoWpf;V1.0.0.0;component/finem.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\FineM.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

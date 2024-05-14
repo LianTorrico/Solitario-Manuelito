@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lorenzo.morini\\Desktop\\oiggiawda\\Solitario-Manuelito\\SolitarioManuelito\\TestSolitario\\TestSolitario.csproj": {}
+    "C:\\Users\\lorenzo.morini\\Desktop\\finale\\Solitario-Manuelito\\SolitarioManuelito\\TestSolitario\\TestSolitario.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lorenzo.morini\\Desktop\\oiggiawda\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj": {
+    "C:\\Users\\lorenzo.morini\\Desktop\\finale\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lorenzo.morini\\Desktop\\oiggiawda\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj",
+        "projectUniqueName": "C:\\Users\\lorenzo.morini\\Desktop\\finale\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj",
         "projectName": "SolitarioClassi",
-        "projectPath": "C:\\Users\\lorenzo.morini\\Desktop\\oiggiawda\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj",
+        "projectPath": "C:\\Users\\lorenzo.morini\\Desktop\\finale\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj",
         "packagesPath": "C:\\Users\\lorenzo.morini\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lorenzo.morini\\Desktop\\oiggiawda\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\obj\\",
+        "outputPath": "C:\\Users\\lorenzo.morini\\Desktop\\finale\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\lorenzo.morini\\Desktop\\oiggiawda\\Solitario-Manuelito\\SolitarioManuelito\\TestSolitario\\TestSolitario.csproj": {
+    "C:\\Users\\lorenzo.morini\\Desktop\\finale\\Solitario-Manuelito\\SolitarioManuelito\\TestSolitario\\TestSolitario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lorenzo.morini\\Desktop\\oiggiawda\\Solitario-Manuelito\\SolitarioManuelito\\TestSolitario\\TestSolitario.csproj",
+        "projectUniqueName": "C:\\Users\\lorenzo.morini\\Desktop\\finale\\Solitario-Manuelito\\SolitarioManuelito\\TestSolitario\\TestSolitario.csproj",
         "projectName": "TestSolitario",
-        "projectPath": "C:\\Users\\lorenzo.morini\\Desktop\\oiggiawda\\Solitario-Manuelito\\SolitarioManuelito\\TestSolitario\\TestSolitario.csproj",
+        "projectPath": "C:\\Users\\lorenzo.morini\\Desktop\\finale\\Solitario-Manuelito\\SolitarioManuelito\\TestSolitario\\TestSolitario.csproj",
         "packagesPath": "C:\\Users\\lorenzo.morini\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lorenzo.morini\\Desktop\\oiggiawda\\Solitario-Manuelito\\SolitarioManuelito\\TestSolitario\\obj\\",
+        "outputPath": "C:\\Users\\lorenzo.morini\\Desktop\\finale\\Solitario-Manuelito\\SolitarioManuelito\\TestSolitario\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -93,8 +93,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\lorenzo.morini\\Desktop\\oiggiawda\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj": {
-                "projectPath": "C:\\Users\\lorenzo.morini\\Desktop\\oiggiawda\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj"
+              "C:\\Users\\lorenzo.morini\\Desktop\\finale\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj": {
+                "projectPath": "C:\\Users\\lorenzo.morini\\Desktop\\finale\\Solitario-Manuelito\\SolitarioManuelito\\SolitarioClassi\\SolitarioClassi.csproj"
               }
             }
           }

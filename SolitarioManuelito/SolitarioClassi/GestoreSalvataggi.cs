@@ -13,8 +13,16 @@ namespace SolitarioClassi
         {
             _leaderboardPath = "leaderboard.txt";
         }
+        private void CreaFileSeNonEsistente()
+        {
+            if (!File.Exists(_leaderboardPath))
+            {
+                File.Create(_leaderboardPath).Close();
+            }
+        }
         public int? LeggiRecord()
         {
+            CreaFileSeNonEsistente();
             string line;
             using (StreamReader sr = new StreamReader(_leaderboardPath))
             {

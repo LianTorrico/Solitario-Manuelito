@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BKbaB8T1m6XIbQEoGl89nWq/+FQcRfU5VbDEM4Gzz9rH43y4o3D4ogQe1TtKNiJwSzAo5w6KZiqVbx3wNlKBCA==",
+  "dgSpecHash": "3X78OHXCAt09n9uuIrm9NPSKDx52P45+jqr+B6sPvmfsELrLWSio7rEtrbh6GtGGX3SBYVDjzoI35kD7EQDlwg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lorenzo.morini\\Desktop\\oiggiawda\\Solitario-Manuelito\\SolitarioManuelito\\TestSolitario\\TestSolitario.csproj",
+  "projectFilePath": "C:\\Users\\lorenzo.morini\\Desktop\\finale\\Solitario-Manuelito\\SolitarioManuelito\\TestSolitario\\TestSolitario.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lorenzo.morini\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\lorenzo.morini\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",

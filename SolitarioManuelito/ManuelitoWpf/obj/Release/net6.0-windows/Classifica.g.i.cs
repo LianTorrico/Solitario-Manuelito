@@ -69,7 +69,7 @@ namespace ManuelitoWpf {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ManuelitoWpf;component/classifica.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ManuelitoWpf;V1.0.0.0;component/classifica.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Classifica.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
