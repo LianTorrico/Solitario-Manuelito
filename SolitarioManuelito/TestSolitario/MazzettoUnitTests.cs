@@ -51,11 +51,6 @@ namespace TestSolitario
             Mazzetto mazzettoTest = new Mazzetto(Posizioni.Finali, 1);
             Assert.ThrowsException<ArgumentException>(() => mazzettoTest.AggiungiCarta(null));
         }
-
-
-
-
-
         //TEST MAZZETTI FINALI
         [TestMethod]
         public void AggiungiCarta_MazzettoFinalePrimoNonAsso_Errore()
