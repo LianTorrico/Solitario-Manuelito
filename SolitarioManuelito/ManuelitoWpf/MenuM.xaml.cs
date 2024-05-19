@@ -24,6 +24,8 @@ namespace ManuelitoWpf
     {
         string pathMazzo;
         string endMazzo;
+        Impostazioni impostazioni;
+        Classifica classifica;
         public MenuM()
         {
             InitializeComponent();
@@ -82,7 +84,8 @@ namespace ManuelitoWpf
         {
             try
             {
-                Classifica classifica = new Classifica();
+                if (classifica != null && classifica.IsVisible) throw new Exception("classifica già aperta");
+                classifica = new Classifica();
                 classifica.Show();
                 classifica.Owner = this;
             }catch(Exception ex)
@@ -100,7 +103,8 @@ namespace ManuelitoWpf
         {
             try
             {
-                Impostazioni impostazioni = new Impostazioni(pathMazzo);
+                if (impostazioni!= null && impostazioni.IsVisible) throw new ArgumentException("impostazioni già aperte");
+                impostazioni = new Impostazioni(pathMazzo);
                 impostazioni.Show();
                 impostazioni.Owner = this;
             }
