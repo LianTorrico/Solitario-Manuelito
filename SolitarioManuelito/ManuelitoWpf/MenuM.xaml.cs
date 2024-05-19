@@ -56,6 +56,7 @@ namespace ManuelitoWpf
                 partitaM.Owner = this;
                 partitaM.Show();
                 partitaM.Owner = null;
+                this.Owner = partitaM;
                 this.Close();
             }catch(Exception ex)
             {

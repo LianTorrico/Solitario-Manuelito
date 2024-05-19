@@ -277,3 +277,5 @@ C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito
 C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\bin\Debug\net6.0-windows\images\carte\mazzo4\9C.png
 C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\bin\Debug\net6.0-windows\images\carte\mazzo4\9D.png
 C:\Users\lorenzo.morini\Desktop\oiggiawda\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\bin\Debug\net6.0-windows\images\carte\mazzo4\RETRO.png
+C:\Users\loren\OneDrive\Desktop\School\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\Impostazioni.g.cs
+C:\Users\loren\OneDrive\Desktop\School\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Debug\net6.0-windows\Impostazioni.baml
