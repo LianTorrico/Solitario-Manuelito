@@ -12,6 +12,7 @@ namespace SolitarioClassi
         public GestoreSalvataggi()
         {
             _leaderboardPath = "leaderboard.txt";
+            CreaFileSeNonEsistente();
         }
         private void CreaFileSeNonEsistente()
         {
@@ -22,7 +23,6 @@ namespace SolitarioClassi
         }
         public int? LeggiRecord()
         {
-            CreaFileSeNonEsistente();
             string line;
             using (StreamReader sr = new StreamReader(_leaderboardPath))
             {
@@ -58,7 +58,6 @@ namespace SolitarioClassi
         }
         public List<(int, string)> LeggiLeaderboard()
         {
-            
             string? line;
             List<(int, string)> leaderboard = new List<(int, string)>();
             using (StreamReader sr = new StreamReader(_leaderboardPath))
