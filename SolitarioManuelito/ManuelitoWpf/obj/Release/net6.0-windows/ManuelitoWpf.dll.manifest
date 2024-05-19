@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="ManuelitoWpf.exe" version="1.3.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="ManuelitoWpf.exe" version="1.4.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="Launcher" version="8.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -1565,13 +1565,13 @@
       <dsig:DigestValue>DxboBhngEGuSCoMP86ywJauyokZppTyH9mUPQvRkN/o=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ManuelitoWpf.dll" size="856064">
+  <file name="ManuelitoWpf.dll" size="855040">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>6ExjeGs3Be8bvoaL2LiUcasBpVPdDWdyV01RFgsOAFI=</dsig:DigestValue>
+      <dsig:DigestValue>V9zCa15hJLtb2JXKArJwFqhdFCuGoo6ezTxuIYkr9yQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="ManuelitoWpf.exe" size="149504">
@@ -1580,7 +1580,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>YYndMkxsQ3/SxRXIbjh7ujCOp72eoJH0Ofz7KK2bABo=</dsig:DigestValue>
+      <dsig:DigestValue>1l0OqNnEi/ySBJsW1RoavLdDj0FCfbbRJWC1fH+674c=</dsig:DigestValue>
     </hash>
   </file>
   <file name="ManuelitoWpf.runtimeconfig.json" size="372">
@@ -1598,7 +1598,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>9B5B8pAeuinbds8hHM3xS9ZPRaFDbYZJo9RZjc9qLhg=</dsig:DigestValue>
+      <dsig:DigestValue>TvYyGDIInPZ+gxIg1sEQMtmI6Lppi4sewCt/Nl8Lct4=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

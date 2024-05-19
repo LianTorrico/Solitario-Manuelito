@@ -101,7 +101,7 @@ namespace ManuelitoWpf {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ManuelitoWpf;component/menum.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ManuelitoWpf;V1.0.0.0;component/menum.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\MenuM.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
