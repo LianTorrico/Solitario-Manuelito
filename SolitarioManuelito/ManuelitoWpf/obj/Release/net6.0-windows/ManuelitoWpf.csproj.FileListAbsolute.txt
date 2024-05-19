@@ -1017,3 +1017,7 @@ C:\Users\loren\OneDrive\Desktop\School\Solitario-Manuelito1\SolitarioManuelito\M
 C:\Users\loren\OneDrive\Desktop\School\Solitario-Manuelito1\SolitarioManuelito\ManuelitoWpf\bin\Release\net6.0-windows\ManuelitoWpf.application
 C:\Users\loren\OneDrive\Desktop\School\Solitario-Manuelito1\SolitarioManuelito\ManuelitoWpf\obj\Release\net6.0-windows\ManuelitoWpf.dll.manifest
 C:\Users\loren\OneDrive\Desktop\School\Solitario-Manuelito1\SolitarioManuelito\ManuelitoWpf\obj\Release\net6.0-windows\ManuelitoWpf.application
+C:\Users\loren\OneDrive\Desktop\School\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\bin\Release\net6.0-windows\ManuelitoWpf.dll.manifest
+C:\Users\loren\OneDrive\Desktop\School\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\bin\Release\net6.0-windows\ManuelitoWpf.application
+C:\Users\loren\OneDrive\Desktop\School\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Release\net6.0-windows\ManuelitoWpf.dll.manifest
+C:\Users\loren\OneDrive\Desktop\School\Solitario-Manuelito\SolitarioManuelito\ManuelitoWpf\obj\Release\net6.0-windows\ManuelitoWpf.application
