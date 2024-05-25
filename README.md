@@ -32,14 +32,14 @@ Processore: Qualsiasi processore 1 GHz +
  Memoria: 3GB
  Scheda video: Qualsiasi
  DirectX: Versione 11+
- Spazio: 100 MB di spazio disponibile</code>
+ Spazio: 400 MB di spazio disponibile</code>
 ### Requisiti Consigliati
 <code>OS: Windows 10 / 11 - 64 bit
  Processore: Qualsiasi processore 1 GHz+
  Memoria: 4GB
  Scheda video: Qualsiasi
  DirectX: Versione 11+
- Spazio: 120 MB di spazio disponibile</code>
+ Spazio: 500 MB di spazio disponibile</code>
 
 **Attenzione! I requisiti potrebbero variare con il passare del tempo.**
 
