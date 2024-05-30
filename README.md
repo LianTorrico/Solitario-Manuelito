@@ -26,20 +26,24 @@ Aprite la console e posizionatevi nella cartella in cui desiderate installare il
 Nella pagina di questo repository, premere su "<>Code" e premere su Download Zip.
 
 ## Requisiti del sistema 📑
-### Requisiti Minimi
-<code>OS: Windows 10 / 11 - 64 bit 
-Processore: Qualsiasi processore 1 GHz +
- Memoria: 3GB
- Scheda video: Qualsiasi
- DirectX: Versione 11+
- Spazio: 400 MB di spazio disponibile</code>
-### Requisiti Consigliati
-<code>OS: Windows 10 / 11 - 64 bit
- Processore: Qualsiasi processore 1 GHz+
- Memoria: 4GB
- Scheda video: Qualsiasi
- DirectX: Versione 11+
- Spazio: 500 MB di spazio disponibile</code>
+
+ | Requisiti minimi |             |
+|-------------------|-------------|
+| OS | Windows 10 / 11 - 64bit |
+| Processore | 1 GHz |
+| RAM | 3GB |
+| Scheda video | Qualsiasi |
+| DirectX | Versione 11+ |
+| Spazio |	400 MB |
+
+ | Requisiti Consigliati |             |
+|-------------------|-------------|
+| OS | Windows 10 / 11 - 64bit |
+| Processore | 1 GHz |
+| RAM | 4GB |
+| Scheda video | Qualsiasi |
+| DirectX | Versione 11+ |
+| Spazio |	500 MB |
 
 **Attenzione! I requisiti potrebbero variare con il passare del tempo.**
 
