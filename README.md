@@ -58,6 +58,13 @@ Nella pagina di questo repository, premere su "<>Code" e premere su Download Zip
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/LianTorrico"><img src="https://avatars.githubusercontent.com/u/157365006?v=4?s=100" width="100px;" alt="LianTorrico"/><br /><sub><b>LianTorrico</b></sub></a><br /><a href="#design-LianTorrico" title="Design">🎨</a> <a href="#doc-LianTorrico" title="Documentation">📖</a> <a href="#ideas-LianTorrico" title="Ideas, Planning, & Feedback">🤔</a> <a href="#translation-LianTorrico" title="Translation">🌍</a> <a href="#talk-LianTorrico" title="Talks">📢</a> <a href="#userTesting-LianTorrico" title="User Testing">📓</a> <a href="#infra-LianTorrico" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#content-LianTorrico" title="Content">🖋</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
