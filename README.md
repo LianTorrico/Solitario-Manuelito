@@ -58,6 +58,13 @@ Nella pagina di questo repository, premere su "<>Code" e premere su Download Zip
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/super1sayan"><img src="https://avatars.githubusercontent.com/u/159620434?v=4?s=100" width="100px;" alt="super1sayan"/><br /><sub><b>super1sayan</b></sub></a><br /><a href="#code-super1sayan" title="Code">💻</a> <a href="#doc-super1sayan" title="Documentation">📖</a> <a href="#ideas-super1sayan" title="Ideas, Planning, & Feedback">🤔</a> <a href="#userTesting-super1sayan" title="User Testing">📓</a> <a href="#test-super1sayan" title="Tests">⚠️</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
