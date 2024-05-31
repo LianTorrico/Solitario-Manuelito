@@ -1,4 +1,28 @@
 {
   "projectName": "Solitario-Manuelito",
-  "projectOwner": "LianTorrico"
+  "projectOwner": "LianTorrico",
+  "files": [
+    "README.md"
+  ],
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "LianTorrico",
+      "name": "LianTorrico",
+      "avatar_url": "https://avatars.githubusercontent.com/u/157365006?v=4",
+      "profile": "https://github.com/LianTorrico",
+      "contributions": [
+        "design",
+        "doc",
+        "ideas",
+        "translation",
+        "talk",
+        "userTesting",
+        "infra",
+        "content"
+      ]
+    }
+  ]
 }
