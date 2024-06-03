@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ManuelitoWpf/1.0.0": {
+        "dependencies": {
+          "SolitarioClassi": "1.0.0"
+        },
+        "runtime": {
+          "ManuelitoWpf.dll": {}
+        }
+      },
+      "SolitarioClassi/1.0.0": {
+        "runtime": {
+          "SolitarioClassi.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ManuelitoWpf/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SolitarioClassi/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
