@@ -38,6 +38,19 @@
         "infra",
         "content"
       ]
+    },
+    {
+      "login": "super1sayan",
+      "name": "super1sayan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159620434?v=4",
+      "profile": "https://github.com/super1sayan",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas",
+        "userTesting",
+        "test"
+      ]
     }
   ]
 }
