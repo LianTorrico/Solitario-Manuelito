@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="ManuelitoWpf.exe" version="1.4.1.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="ManuelitoWpf.exe" version="1.5.6.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="Launcher" version="8.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -413,6 +413,15 @@
       <dsig:DigestValue>14V60MAFLi6O9DKPAhGht3X+ZiXTxmUQ6HCK+O+5yY8=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="images\carte\Mazzo1\Partita.png" size="234452">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Xm0HdTYAD8cfxGhIvyZ54cKOMCoBuHm8MxV+I+zRDG0=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="images\carte\Mazzo1\RETRO.jpg" size="1252738">
     <hash>
       <dsig:Transforms>
@@ -780,6 +789,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>csE9Ihm5D+NqAMHM/HSbzpwGmovn4Gk4HL7ZXus2JmA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\carte\Mazzo2\Partita.png" size="329677">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4DDNcqke6LGUu2ldD0lUsE2kCeWq2f9+LBimfNcFi1w=</dsig:DigestValue>
     </hash>
   </file>
   <file name="images\carte\Mazzo2\RETRO.png" size="357012">
@@ -1151,6 +1169,15 @@
       <dsig:DigestValue>iOlH+Eg+Vf5tUVwPiQPm8wzIMHk4xUwtsKbi5EhjRGc=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="images\carte\Mazzo3\Partita.png" size="1217924">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RPo9yf2SgNidXeZNuPatfVNCz3yHhz/fZ56XYcru1FU=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="images\carte\Mazzo3\Retro.jpg" size="406212">
     <hash>
       <dsig:Transforms>
@@ -1520,6 +1547,15 @@
       <dsig:DigestValue>exPjbgl/TumoaULGVFhf+79lJjpjB+a+38yTzXvpC4Q=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="images\carte\Mazzo4\Partita.png" size="1680312">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1UY26fh6P+QZyi4DVPXhOQHmk64yL8/2hXcqkpKjSlU=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="images\carte\mazzo4\RETRO.png" size="39764">
     <hash>
       <dsig:Transforms>
@@ -1565,13 +1601,13 @@
       <dsig:DigestValue>DxboBhngEGuSCoMP86ywJauyokZppTyH9mUPQvRkN/o=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ManuelitoWpf.dll" size="855040">
+  <file name="ManuelitoWpf.dll" size="855552">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>H51kAdicMJwplanGbBKsGxioR0p7vhfpA7Jip630e2U=</dsig:DigestValue>
+      <dsig:DigestValue>OrImhDfhtyQ8HNwA5ihSI9k/j5nNGihcG2D5p8iDXrI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="ManuelitoWpf.exe" size="149504">
@@ -1580,7 +1616,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>AoTy7mq8gl6hshf7ov6ymw6eB8eQ5oxbvcWzI2fPtj0=</dsig:DigestValue>
+      <dsig:DigestValue>zjLBmP6ME4BDVeqig44awrxUeHavX+sOx2F+tsitOHs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="ManuelitoWpf.runtimeconfig.json" size="372">
@@ -1598,7 +1634,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>tkO5Py1bQ/nWjd0sejd89y0Apj+uQAm/vgK3AT+xrrw=</dsig:DigestValue>
+      <dsig:DigestValue>1x1ihkmUq+2wOPlqoRmZffVQGug0uJctUBHNQ22taFA=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

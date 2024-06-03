@@ -9,11 +9,11 @@
       mc:Ignorable="d" 
       Background="Transparent"
       Title="Partita" Height="730" Width="350">
-    <Grid>
+    <Grid Name="grid">
         <Grid.Background>
             <ImageBrush ImageSource="/images/Partita.png" Stretch="UniformToFill"></ImageBrush>
         </Grid.Background>
-        <Button x:Name="btn_finale1" Margin="5,-14,263,594" Click="ClickCarta" BorderBrush="#00000000">
+        <Button x:Name="btn_finale1" Margin="5,2,263,578" Click="ClickCarta" BorderBrush="#00000000">
 
             <Button.Resources>
                 <Style TargetType="Border">
@@ -22,7 +22,7 @@
             </Button.Resources>
             <Image x:Name="img_finale1" Height="128" Width="81"/>
         </Button>
-        <Button x:Name="btn_finale2" Margin="90,-14,178,594" Click="ClickCarta" BorderBrush="#00000000">
+        <Button x:Name="btn_finale2" Margin="90,2,178,578" Click="ClickCarta" BorderBrush="#00000000">
 
             <Button.Resources>
                 <Style TargetType="Border">
@@ -31,7 +31,7 @@
             </Button.Resources>
             <Image x:Name="img_finale2" Height="128" Width="81"/>
         </Button>
-        <Button x:Name="btn_finale3" Margin="174,-14,94,594" Click="ClickCarta" BorderBrush="#00000000">
+        <Button x:Name="btn_finale3" Margin="174,2,94,578" Click="ClickCarta" BorderBrush="#00000000">
 
             <Button.Resources>
                 <Style TargetType="Border">
@@ -40,7 +40,7 @@
             </Button.Resources>
             <Image x:Name="img_finale3" Height="128" Width="81"/>
         </Button>
-        <Button x:Name="btn_finale4" Margin="258,-14,10,594" Click="ClickCarta" BorderBrush="#00000000">
+        <Button x:Name="btn_finale4" Margin="258,2,10,578" Click="ClickCarta" BorderBrush="#00000000">
 
             <Button.Resources>
                 <Style TargetType="Border">
@@ -49,7 +49,7 @@
             </Button.Resources>
             <Image x:Name="img_finale4" Height="128" Width="81"/>
         </Button>
-        <Button x:Name="btn_ausiliare1" Margin="5,594,263,-14" Click="ClickCarta" BorderBrush="#00000000">
+        <Button x:Name="btn_ausiliare1" Margin="5,578,263,2" Click="ClickCarta" BorderBrush="#00000000">
 
             <Button.Resources>
                 <Style TargetType="Border">
@@ -58,7 +58,7 @@
             </Button.Resources>
             <Image x:Name="img_ausiliare1" Height="128" Width="81"/>
         </Button>
-        <Button x:Name="btn_ausiliare2" Margin="90,594,178,-14" Click="ClickCarta" BorderBrush="#00000000">
+        <Button x:Name="btn_ausiliare2" Margin="90,578,178,2" Click="ClickCarta" BorderBrush="#00000000">
 
             <Button.Resources>
                 <Style TargetType="Border">
@@ -68,7 +68,7 @@
             </Button.Resources>
             <Image x:Name="img_ausiliare2" Height="128" Width="81"/>
         </Button>
-        <Button x:Name="btn_ausiliare3" Margin="174,594,94,-14" Click="ClickCarta" BorderBrush="#00000000">
+        <Button x:Name="btn_ausiliare3" Margin="174,578,94,2" Click="ClickCarta" BorderBrush="#00000000">
 
             <Button.Resources>
                 <Style TargetType="Border">
@@ -77,7 +77,7 @@
             </Button.Resources>
             <Image x:Name="img_ausiliare3" Height="128" Width="81"/>
         </Button>
-        <Button x:Name="btn_ausiliare4" Margin="258,594,10,-14" Click="ClickCarta" BorderBrush="#00000000">
+        <Button x:Name="btn_ausiliare4" Margin="258,578,10,2" Click="ClickCarta" BorderBrush="#00000000">
 
             <Button.Resources>
                 <Style TargetType="Border">
@@ -86,9 +86,9 @@
             </Button.Resources>
             <Image x:Name="img_ausiliare4" Height="128" Width="81" RenderTransformOrigin="1,1"/>
         </Button>
-        <Image x:Name="img_cartaEstratta3" Height="128" Width="81" Margin="156,257,113,329"/>
-        <Image x:Name="img_cartaEstratta2" Height="128" Width="81" Margin="195,287,74,299"/>
-        <Button x:Name="btn_cartaestratta_1" Margin="235,315,33,265" Click="ClickCarta" BorderBrush="#00000000">
+        <Image x:Name="img_cartaEstratta3" Height="128" Width="81" Margin="156,263,113,323"/>
+        <Image x:Name="img_cartaEstratta2" Height="128" Width="81" Margin="195,293,74,293"/>
+        <Button x:Name="btn_cartaestratta_1" Margin="235,321,33,259" Click="ClickCarta" BorderBrush="#00000000">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="11"></Setter>
@@ -96,7 +96,7 @@
             </Button.Resources>
             <Image x:Name="img_cartaEstratta1" Height="128" Width="81"/>
         </Button>
-        <Button x:Name="btn_mazzo" Margin="50,257,218,323" Click="Mazzo_Click" BorderBrush="#00000000" Background="#00000000" >
+        <Button x:Name="btn_mazzo" Margin="50,263,218,317" Click="Mazzo_Click" BorderBrush="#00000000" Background="#00000000" >
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="19"></Setter>
@@ -104,7 +104,7 @@
             </Button.Resources>
             <Image x:Name="img_mazzo" Height="128" Width="81"/>
         </Button>
-        <Button x:Name="btn_Resa" Content="Resa" Margin="32,546,225,134" Click="btn_Resa_Click" Background="#FFA40808" FontWeight="Bold" Foreground="White" FontSize="24">
+        <Button x:Name="btn_Resa" Content="Resa" Margin="32,530,225,150" Click="btn_Resa_Click" Background="#FFA40808" FontWeight="Bold" Foreground="White" FontSize="24">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="30"></Setter>
@@ -112,9 +112,9 @@
             </Button.Resources>
         </Button>
         <Image x:Name="img_animazione" Height="100" Width="62" Margin="-263,226,551,388"/>
-        <Label x:Name="lbl_mosse" Content="Mosse: 0&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Height="39" Margin="9,133,0,0" VerticalAlignment="Top" Width="149" IsEnabled="False" Foreground="White" FontWeight="Bold" FontSize="24"/>
-        <Label x:Name="lbl_record" Content="Record:" HorizontalAlignment="Left" Height="39" Margin="212,133,0,0" VerticalAlignment="Top" Width="150" IsEnabled="False" Foreground="White" FontWeight="Bold" FontSize="24"/>
-        <Label x:Name="lbl_nome" Content="pippo&#xD;&#xA;" HorizontalAlignment="Left" Height="39" Margin="176,552,0,0" VerticalAlignment="Top" Width="168" IsEnabled="False" Foreground="White" FontWeight="Bold" FontSize="20" HorizontalContentAlignment="Right"/>
+        <Label x:Name="lbl_mosse" Content="Mosse: 0&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Height="39" Margin="9,145,0,0" VerticalAlignment="Top" Width="149" IsEnabled="False" Foreground="White" FontWeight="Bold" FontSize="24"/>
+        <Label x:Name="lbl_record" Content="Record:" HorizontalAlignment="Left" Height="39" Margin="212,145,0,0" VerticalAlignment="Top" Width="150" IsEnabled="False" Foreground="White" FontWeight="Bold" FontSize="24"/>
+        <Label x:Name="lbl_nome" Content="pippo&#xD;&#xA;" HorizontalAlignment="Left" Height="39" Margin="176,536,0,0" VerticalAlignment="Top" Width="168" IsEnabled="False" Foreground="White" FontWeight="Bold" FontSize="20" HorizontalContentAlignment="Right"/>
 
     </Grid>
 </Window>

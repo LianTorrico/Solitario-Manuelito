@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -69,6 +71,10 @@ namespace ManuelitoWpf
                 lbl_record.FontSize -= 5;
             }
             lbl_nome.Content = partitaManuelito.Nome;
+            ImageBrush myBrush = new ImageBrush();
+            myBrush.ImageSource = new BitmapImage(
+                new Uri(path + "Partita.png", UriKind.Relative));
+            grid.Background = myBrush;
         }
         
         private void ClickCarta(object sender, RoutedEventArgs e)

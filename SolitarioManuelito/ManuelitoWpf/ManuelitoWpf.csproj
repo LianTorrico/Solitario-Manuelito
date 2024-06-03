@@ -95,6 +95,7 @@
     <None Remove="images\carte\Mazzo1\9B.jpg" />
     <None Remove="images\carte\Mazzo1\9C.jpg" />
     <None Remove="images\carte\Mazzo1\9D.jpg" />
+    <None Remove="images\carte\Mazzo1\Partita.png" />
     <None Remove="images\carte\Mazzo1\RETRO.jpg" />
     <None Remove="images\carte\mazzo2\10A.png" />
     <None Remove="images\carte\mazzo2\10B.png" />
@@ -176,6 +177,7 @@
     <None Remove="images\carte\Mazzo2\D7.png" />
     <None Remove="images\carte\Mazzo2\D8.png" />
     <None Remove="images\carte\Mazzo2\D9.png" />
+    <None Remove="images\carte\Mazzo2\Partita.png" />
     <None Remove="images\carte\Mazzo2\RETRO.png" />
     <None Remove="images\carte\mazzo3\10A.jpg" />
     <None Remove="images\carte\Mazzo3\10A.png" />
@@ -229,6 +231,7 @@
     <None Remove="images\carte\Mazzo3\9C.png" />
     <None Remove="images\carte\mazzo3\9D.jpg" />
     <None Remove="images\carte\Mazzo3\9D.png" />
+    <None Remove="images\carte\Mazzo3\Partita.png" />
     <None Remove="images\carte\Mazzo3\Retro.jpg" />
     <None Remove="images\carte\mazzo4\10A.png" />
     <None Remove="images\carte\mazzo4\10B.png" />
@@ -270,6 +273,7 @@
     <None Remove="images\carte\mazzo4\9B.png" />
     <None Remove="images\carte\mazzo4\9C.png" />
     <None Remove="images\carte\mazzo4\9D.png" />
+    <None Remove="images\carte\Mazzo4\Partita.png" />
     <None Remove="images\carte\mazzo4\RETRO.png" />
     <None Remove="images\Carte\RETRO.jpg" />
     <None Remove="images\classifica.png" />
@@ -279,6 +283,12 @@
     <None Remove="images\Vincita.png" />
     <None Remove="menu.png" />
     <None Remove="Partita.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="images\carte\Mazzo2\Partita.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -400,6 +410,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="images\carte\Mazzo1\9D.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo1\Partita.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="images\carte\Mazzo1\RETRO.jpg">
@@ -648,6 +661,9 @@
     <Content Include="images\carte\mazzo3\9D.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="images\carte\Mazzo3\Partita.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="images\carte\Mazzo3\Retro.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -769,6 +785,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="images\carte\mazzo4\9D.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\carte\Mazzo4\Partita.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="images\carte\mazzo4\RETRO.png">

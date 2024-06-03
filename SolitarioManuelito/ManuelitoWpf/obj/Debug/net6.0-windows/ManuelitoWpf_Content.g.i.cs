@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo2/partita.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo1/10a.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo1/10b.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo1/10c.jpg")]
@@ -48,6 +49,7 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo1/9b.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo1/9c.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo1/9d.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo1/partita.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo1/retro.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo2/10a.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo2/10b.png")]
@@ -130,6 +132,7 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo3/9b.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo3/9c.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo3/9d.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo3/partita.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo3/retro.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo4/10a.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo4/10b.png")]
@@ -171,6 +174,7 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo4/9b.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo4/9c.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo4/9d.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo4/partita.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/carte/mazzo4/retro.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/classifica.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/menu.png")]
