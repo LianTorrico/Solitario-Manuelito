@@ -34,7 +34,7 @@ Nella pagina di questo repository, premere su "<>Code" e premere su Download Zip
 | RAM | 3GB |
 | Scheda video | Qualsiasi |
 | DirectX | Versione 11+ |
-| Spazio |	400 MB |
+| Spazio |	76 MB |
 
  | Requisiti Consigliati |             |
 |-------------------|-------------|
@@ -43,7 +43,7 @@ Nella pagina di questo repository, premere su "<>Code" e premere su Download Zip
 | RAM | 4GB |
 | Scheda video | Qualsiasi |
 | DirectX | Versione 11+ |
-| Spazio |	500 MB |
+| Spazio |	80 MB |
 
 **Attenzione! I requisiti potrebbero variare con il passare del tempo.**
 
