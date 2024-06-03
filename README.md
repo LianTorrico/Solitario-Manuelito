@@ -50,10 +50,6 @@ Nella pagina di questo repository, premere su "<>Code" e premere su Download Zip
 
 
 ## **Sviluppatori** 💻🎧📱
-1. [Lorenzo Morini](https://github.com/MoroQuack)
-2. [Francesco Foschi](https://github.com/supersayan1)
-3. [Lian Torrico](https://github.com/LianTorrico)
-
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
