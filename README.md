@@ -58,6 +58,13 @@ Nella pagina di questo repository, premere su "<>Code" e premere su Download Zip
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/LorenzoMorini777"><img src="https://avatars.githubusercontent.com/u/150846437?v=4?s=100" width="100px;" alt="LorenzoMorini777"/><br /><sub><b>LorenzoMorini777</b></sub></a><br /><a href="#code-LorenzoMorini777" title="Code">💻</a> <a href="#test-LorenzoMorini777" title="Tests">⚠️</a> <a href="#bug-LorenzoMorini777" title="Bug reports">🐛</a> <a href="#ideas-LorenzoMorini777" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-LorenzoMorini777" title="Maintenance">🚧</a> <a href="#mentoring-LorenzoMorini777" title="Mentoring">🧑‍🏫</a> <a href="#infra-LorenzoMorini777" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    </tr>
+  </tbody>
+</table>
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
